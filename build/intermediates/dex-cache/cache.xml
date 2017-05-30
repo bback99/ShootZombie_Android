@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/libs/pomelo-android-client.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5e47649aa9eaf27eb51e5fe7c2f543f6d4fc9904">
+        <dex dex="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/transforms/dex/debug/folders/1000/2/pomelo-android-client_9dd531c091dee79822db322d012b86632ee8fa75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6e4b739fa0a591814674bc87d4c3bc76888f1305/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dfd3f6358bdcc40bff0e644998fcce9f33a0cbde">
+        <dex dex="/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_eabea272a282429ba4b7ed87390d5650ebd565a4/classes.dex" />
+    </item>
+
+</items>

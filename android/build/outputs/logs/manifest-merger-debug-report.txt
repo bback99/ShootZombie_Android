@@ -1,0 +1,99 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:5:22-64
+application
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:7:5-31:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shoong/.android/build-cache/614e33719be683cb62d8712b3dc433cf7219d30c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shoong/.android/build-cache/72bc182c5597d0ecd76c4af63d81316144e5e285/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shoong/.android/build-cache/f3c32222bbe877514b9a6c157b87bdbdaf886f77/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shoong/.android/build-cache/fdd14669553b78631671ad560bc5b097b5f098d8/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shoong/.android/build-cache/62310c1cdd327a1c8f59ff201dbca5a184c30211/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/ec35b3eb71638a30c5ce7a071dd245d7723c33ac/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/9346dca5f262112733122c34da39df2944d8aa36/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shoong/.android/build-cache/c7b2c58cccb60d2e57e6a0d498408ba0dcbac3a9/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shoong/.android/build-cache/34ad029dbe48eae69776b4231cfdd7c074ba56f5/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:10:9-41
+	android:supportsRtl
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:12:9-35
+	android:roundIcon
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:11:9-54
+	android:allowBackup
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:8:9-35
+	android:icon
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:9:9-43
+	android:theme
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:13:9-40
+activity#com.snowback.tilemapandcharacter.MainActivity
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:14:9-25:20
+	android:screenOrientation
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:17:13-49
+	android:label
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:16:13-45
+	android:configChanges
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:18:13-83
+	android:name
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:15:13-73
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:23:27-74
+activity#com.snowback.tilemapandcharacter.AndroidLauncher
+ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:27:9-30:86
+	android:screenOrientation
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:29:13-50
+	android:configChanges
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:30:13-83
+	android:name
+		ADDED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml:28:13-44
+uses-sdk
+INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shoong/.android/build-cache/614e33719be683cb62d8712b3dc433cf7219d30c/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shoong/.android/build-cache/72bc182c5597d0ecd76c4af63d81316144e5e285/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shoong/.android/build-cache/f3c32222bbe877514b9a6c157b87bdbdaf886f77/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shoong/.android/build-cache/fdd14669553b78631671ad560bc5b097b5f098d8/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shoong/.android/build-cache/62310c1cdd327a1c8f59ff201dbca5a184c30211/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/ec35b3eb71638a30c5ce7a071dd245d7723c33ac/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/9346dca5f262112733122c34da39df2944d8aa36/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shoong/.android/build-cache/c7b2c58cccb60d2e57e6a0d498408ba0dcbac3a9/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/shoong/.android/build-cache/34ad029dbe48eae69776b4231cfdd7c074ba56f5/output/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+		INJECTED from /Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/shoong/.android/build-cache/614e33719be683cb62d8712b3dc433cf7219d30c/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/shoong/.android/build-cache/72bc182c5597d0ecd76c4af63d81316144e5e285/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/shoong/.android/build-cache/f3c32222bbe877514b9a6c157b87bdbdaf886f77/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/shoong/.android/build-cache/fdd14669553b78631671ad560bc5b097b5f098d8/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/shoong/.android/build-cache/62310c1cdd327a1c8f59ff201dbca5a184c30211/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/ec35b3eb71638a30c5ce7a071dd245d7723c33ac/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/shoong/.android/build-cache/9346dca5f262112733122c34da39df2944d8aa36/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/shoong/.android/build-cache/c7b2c58cccb60d2e57e6a0d498408ba0dcbac3a9/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] /Users/shoong/.android/build-cache/b0bb46a8e786e6ea270401340a571bf9e7c9dd1e/output/AndroidManifest.xml:26:9-47

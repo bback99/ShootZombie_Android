@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pomelo-android-client">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/libs/pomelo-android-client.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
