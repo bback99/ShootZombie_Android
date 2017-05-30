@@ -1,4 +1,0 @@
-#Tue May 30 15:29:31 EDT 2017
-base.0=/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2
-renamed.0=classes.dex
-file.0=/Users/shoong/Documents/workspace/GDX/ShootZombie_Android/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex
