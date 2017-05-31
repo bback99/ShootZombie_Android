@@ -7,6 +7,8 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.math.Rectangle;
+
 import java.util.ArrayList;
 
 /**
@@ -23,6 +25,10 @@ public class Player extends Sprite {
     private float textureSize = 0.0f;
     private float saveShootingAngle = 0.0f;
 
+    private Rectangle hitBox;
+    private Integer health;
+    private Integer weaponPower;
+
     public Player(String username, double posX, double posY) {
         mUserName = username;
         animation = AssetManager.getInstance().getAniCharRight();
@@ -33,6 +39,10 @@ public class Player extends Sprite {
 
         this.setX((float) posX);
         this.setY((float) posY);
+
+        health = 100;
+        weaponPower = 2;
+        hitBox = new Rectangle(getX(),getY(),100.f,100.f);
     }
 
     public String getUserName() { return mUserName; }
@@ -48,6 +58,15 @@ public class Player extends Sprite {
     }
 
     public void draw(SpriteBatch spritebatch) {
+        //update hitbox's position.
+        hitBox.x = getX();
+        hitBox.y = getY();
+
+        //Debug purpose.
+        if(health<=0){
+            health = 100;
+        }
+
         if(bIsPlayingAnimation) {
             timePassed += Gdx.graphics.getDeltaTime();
         }
@@ -71,9 +90,13 @@ public class Player extends Sprite {
             // check to collide any zombies
             for(Zombie zombie: lstZombie) {
                 if(zombie.getHitBox().overlaps(bullet.getHitBox())) {
-                    lstZombie.remove(zombie);
+                    zombie.hit(weaponPower);
+                    if (zombie.getHealth()<=0) {
+                        lstZombie.remove(zombie);
+                        return true;
+                    }
                     lstBullet.remove(bullet);
-                    return true;
+                    return false;
                 }
             }
 
@@ -129,5 +152,16 @@ public class Player extends Sprite {
         else {  // right        // for example using atlas
             animation = AssetManager.getInstance().getAniCharRight();
         }
+    }
+
+    public Integer getHealth(){
+        return health;
+    }
+    public Rectangle getHitBox(){
+        return hitBox;
+    }
+
+    public void Hit(int i) {
+        health-=i;
     }
 }

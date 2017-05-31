@@ -8,6 +8,7 @@ import com.badlogic.gdx.assets.*;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.snowback.tilemapandcharacter.UI.HUD;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -38,6 +39,7 @@ public class Tilemapandcharacter extends Game {
         private Play mPlay;
         private JoyStick joyStick;
         private SocketManager mSocketManager;
+        private HUD hud;
 
         SpriteBatch batch;
 
@@ -62,6 +64,7 @@ public class Tilemapandcharacter extends Game {
         private void CreateObjects() {
             world = new World();
             mPlay = new Play(this);
+            hud = new HUD(batch, this);
             joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
 
             mSocketManager = new SocketManager(this);
@@ -98,6 +101,11 @@ public class Tilemapandcharacter extends Game {
 
                 // update bullet
                 mPlay.updateBullets();
+                mPlay.updateEnemy(delta);
+
+                batch.setProjectionMatrix(hud.stage.getCamera().combined);
+                hud.Render();
+                hud.update(delta);
             }
             else{
                 Gdx.app.log("Loading Resources", Float.toString(AssetManager.getInstance().getAssetManager().getProgress()));
@@ -154,6 +162,10 @@ public class Tilemapandcharacter extends Game {
             if (mListener != null) {
                 mListener.example("resize is called.");
             }
+        }
+
+        public Play getPlay(){
+            return mPlay;
         }
 
         public void socketHandler(String type, Object... args) {

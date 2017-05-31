@@ -104,4 +104,10 @@ public class Play {
             //addZombie();
         }
     }
+
+    public void updateEnemy(float dt) {
+        for(Zombie zombie: mlstZombie){
+            zombie.update(dt, mPlayer);
+        }
+    }
 }

@@ -1,4 +1,5 @@
 package com.snowback.tilemapandcharacter;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -25,8 +26,7 @@ public class AssetManager {
     }
 
     private com.badlogic.gdx.assets.AssetManager mAssetManager = new com.badlogic.gdx.assets.AssetManager();
-    private Texture mTxtZombie;
-    private Texture mTxtBullet;
+    private Texture mTxtZombie, mTxtBullet, mTxtHPBar;
     private TextureAtlas mAtlasWalking;
     private Animation mAniCharRight, mAniCharRightDown, mAniCharDown, mAniCharDownLeft, mAniCharLeft, mAniCharLeftUp, mAniCharUp, mAniCharUpRight;
     private boolean bIsLoaded = false;
@@ -34,6 +34,7 @@ public class AssetManager {
     public void Init() {
         mAssetManager.load("resources/zombie.png", Texture.class);
         mAssetManager.load("resources/bullet.png", Texture.class);
+        mAssetManager.load("uiAssets/green.jpg", Texture.class);
         mAssetManager.load("players/character10/right/walkingRight.atlas", TextureAtlas.class);
         for(int i=1; i<=22; i++) {
             String strName = "players/character10/" + String.format("%02d", i) + ".png";
@@ -44,6 +45,7 @@ public class AssetManager {
     public void makeResource() {
         mTxtZombie = mAssetManager.get("resources/zombie.png", Texture.class);
         mTxtBullet = mAssetManager.get("resources/bullet.png", Texture.class);
+        mTxtHPBar = mAssetManager.get("uiAssets/green.jpg", Texture.class);
 
         // make animation from atlas
         mAtlasWalking = mAssetManager.get("players/character10/right/walkingRight.atlas", TextureAtlas.class);
@@ -109,6 +111,7 @@ public class AssetManager {
     public com.badlogic.gdx.assets.AssetManager getAssetManager() { return mAssetManager; }
     public Texture getZombie() { return mTxtZombie; }
     public Texture getBullet() { return mTxtBullet; }
+    public Texture getHPBar() { return mTxtHPBar; }
     public Animation getAniCharRight() { return mAniCharRight; }
     public Animation getAniCharRightDown() { return mAniCharRightDown; }
     public Animation getAniCharDown() { return mAniCharDown; }
