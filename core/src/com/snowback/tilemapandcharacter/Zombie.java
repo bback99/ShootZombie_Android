@@ -25,10 +25,6 @@ public class Zombie extends Sprite {
         return hitBox;
     }
 
-    public void dispose() {
-        //textureZombie.dispose();
-    }
-
     public void update(float delta) {
 //        hitBox.x += speed * (float)Math.cos(a*Math.PI/180) * delta;
 //        hitBox.y += speed * (float)Math.sin(a*Math.PI/180) * delta;

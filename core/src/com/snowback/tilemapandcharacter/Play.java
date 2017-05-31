@@ -19,7 +19,7 @@ public class Play {
     private Random random;
 
     public Play() {
-        mPlayer = new Player("Snow");
+        mPlayer = new Player("");
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
@@ -57,10 +57,10 @@ public class Play {
     public void setPlayerPosition(String username, float X, float Y) {
 
         for(Player player: mlstPlayers) {
-            if (player.getUserName() == username) {
+            if (player.getUserName().equals(username)) {
                 //Gdx.app.log("X: ", Integer.toString(X));//, ", Y: " , Integer.toString(Y));
-                mPlayer.setX(X);
-                mPlayer.setY(Y);
+                player.setX(X);
+                player.setY(Y);
                 //mPlayer.changeDirection(1);
                 break;
             }
@@ -97,13 +97,6 @@ public class Play {
             mPlayer.changeDirection(90);
         else
             mPlayer.changeDirection(mPlayer.getShootingAngle());
-    }
-
-    public void dispose () {
-        mPlayer.dispose();
-        for(Zombie zombie: mlstZombie) {
-            zombie.dispose();
-        }
     }
 
     public void updateBullets() {

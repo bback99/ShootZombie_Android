@@ -41,6 +41,7 @@ public class Tilemapandcharacter extends Game {
         SpriteBatch batch;
 
         public static final String CHAT_SERVER_URL = "http://10.0.2.2:13337/";
+        private int currentLoad;
 
         public SocketManager getSocketManager() {
             return mSocketManager;
@@ -48,43 +49,83 @@ public class Tilemapandcharacter extends Game {
 
         @Override
         public void show() {
-            batch = new SpriteBatch();
-            this.camera = new OrthographicCamera();
-            this.camera.setToOrtho(false, Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2);
-            world = new World();
-            mPlay = new Play();
-            mSocketManager = new SocketManager(this);
-            joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
-            this.camera.update();
 
             AssetManager.getInstance().Init();
 
-            //SocketManager.getInstance().connect(CHAT_SERVER_URL);
+            batch = new SpriteBatch();
+            this.camera = new OrthographicCamera();
+            this.camera.setToOrtho(false, Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2);
+            this.camera.update();
+
+            mSocketManager = new SocketManager(this);
             mSocketManager.connect(CHAT_SERVER_URL);
+        }
+
+        private void CreateObjects() {
+            world = new World();
+            mPlay = new Play();
+            joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
         }
 
         @Override
         public void render(float delta) {
-            //clear screen
-            Gdx.gl.glClearColor(1, 1, 1, 1);
-            Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
-            this.camera.position.x = mPlay.getPlayer().getX();
-            this.camera.position.y = mPlay.getPlayer().getY();
-            camera.update();
+            // this sequence is very important for using libGDX AssetManager
+            if (AssetManager.getInstance().getAssetManager().update()) {        // waiting for loading resources
+                if (!AssetManager.getInstance().isbIsLoaded()) {                // if done?
+                    AssetManager.getInstance().makeResource();                  // make a resources like animations that was needed
+                    CreateObjects();                                            // create objects like world, player, etc.
+                }
 
-            batch.setProjectionMatrix(camera.combined);
+                //clear screen
+                Gdx.gl.glClearColor(1, 1, 1, 1);
+                Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
-            world.render(camera);
-            joyStick.render(camera);
+                this.camera.position.x = mPlay.getPlayer().getX();
+                this.camera.position.y = mPlay.getPlayer().getY();
+                camera.update();
 
-            batch.begin();
-            generalUpdate();
-            mPlay.render(camera, batch);
-            batch.end();
+                batch.setProjectionMatrix(camera.combined);
 
-            // update bullet
-            mPlay.updateBullets();
+                world.render(camera);
+                joyStick.render(camera);
+
+                batch.begin();
+                generalUpdate();
+                mPlay.render(camera, batch);
+                batch.end();
+
+                // update bullet
+                mPlay.updateBullets();
+            }
+            else{
+                Gdx.app.log("Loading Resources", Float.toString(AssetManager.getInstance().getAssetManager().getProgress()));
+
+                // later on display loading bar here
+            }
+        }
+
+        @Override
+        public void pause() {
+
+        }
+
+        @Override
+        public void resume() {
+
+        }
+
+        @Override
+        public void hide() {
+
+        }
+
+        @Override
+        public void dispose() {
+            world.dispose();
+            joyStick.dispose();
+            //SocketManager.getInstance().disconnect();
+            mSocketManager.disconnect();
         }
 
         public void generalUpdate(){
@@ -114,18 +155,7 @@ public class Tilemapandcharacter extends Game {
                 mListener.example("resize is called.");
             }
         }
-        @Override public void hide() {}
-        @Override public void pause() {}
-        @Override public void resume() {}
-        @Override public void dispose() {
-            world.dispose();
-            mPlay.dispose();
-            joyStick.dispose();
-            //SocketManager.getInstance().disconnect();
-            mSocketManager.disconnect();
-        }
 
-        @Override
         public void socketHandler(String type, Object... args) {
             if (type == "notify spawn zombie") {
                 JSONObject data = (JSONObject) args[0];
@@ -139,7 +169,7 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
-            else if (type == "notify answer") {
+            else if (type == "notify login") {
                 JSONObject data = (JSONObject) args[0];
                 try {
                     String username = data.getString("username");

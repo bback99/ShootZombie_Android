@@ -104,7 +104,7 @@ public class SocketManager {
     public Boolean isConnected() { return isConnected; }
 
     public void attempLogin() {
-        mSocket.emit("request login", "John Snow");
+        mSocket.emit("request login", "Snow");
     }
     public void sendPlayerPosition(float fX, float fY) {
         JSONObject position = new JSONObject();
