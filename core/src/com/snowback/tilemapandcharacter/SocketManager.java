@@ -104,17 +104,14 @@ public class SocketManager {
     public Boolean isConnected() { return isConnected; }
 
     public void attempLogin() {
-        mSocket.emit("request login", "Snow");
+        mSocket.emit("request login", mMain.UserName);
     }
-    public void sendPlayerPosition(float fX, float fY) {
+    public void sendPlayerPosition(float fX, float fY, float angle) {
         JSONObject position = new JSONObject();
         try {
             position.put("X", fX);
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-        try {
             position.put("Y", fY);
+            position.put("angle", angle);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -143,35 +140,13 @@ public class SocketManager {
     private Emitter.Listener onConnectError = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
-            int i = 0;
-            i = 100;
         }
     };
 
     private Emitter.Listener onAnswerLogin = new Emitter.Listener() {
         @Override
         public void call(Object... args) {
-            JSONObject data = (JSONObject) args[0];
-
-            int numUsers;
-            try {
-                numUsers = data.getInt("numUsers");
-                JSONObject position = data.getJSONObject("zombiePosition");
-                float fX = position.getInt("X");
-                float fY = position.getInt("Y");
-                Gdx.app.log("SOCKET.IO", "users: " + numUsers);
-                Gdx.app.log("SOCKET.IO", "position: " + fX + ", " + fY);
-            } catch (JSONException e) {
-                Gdx.app.log("SOCKET.IO", "Exception: " + e.toString());
-                return;
-            }
-        }
-    };
-
-    private Emitter.Listener onNotifyMoving = new Emitter.Listener() {
-        @Override
-        public void call(Object... args) {
-            mMain.socketHandler("notify moving", args);
+            mMain.socketHandler("answer login", args);
         }
     };
 
@@ -179,6 +154,13 @@ public class SocketManager {
         @Override
         public void call(Object... args) {
             mMain.socketHandler("notify login", args);
+        }
+    };
+
+    private Emitter.Listener onNotifyMoving = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            mMain.socketHandler("notify moving", args);
         }
     };
 

@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -41,7 +42,7 @@ public class Tilemapandcharacter extends Game {
         SpriteBatch batch;
 
         public static final String CHAT_SERVER_URL = "http://10.0.2.2:13337/";
-        private int currentLoad;
+        public static final String UserName = "Snow";
 
         public SocketManager getSocketManager() {
             return mSocketManager;
@@ -56,15 +57,15 @@ public class Tilemapandcharacter extends Game {
             this.camera = new OrthographicCamera();
             this.camera.setToOrtho(false, Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2);
             this.camera.update();
-
-            mSocketManager = new SocketManager(this);
-            mSocketManager.connect(CHAT_SERVER_URL);
         }
 
         private void CreateObjects() {
             world = new World();
-            mPlay = new Play();
+            mPlay = new Play(this);
             joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
+
+            mSocketManager = new SocketManager(this);
+            mSocketManager.connect(CHAT_SERVER_URL);
         }
 
         @Override
@@ -124,7 +125,6 @@ public class Tilemapandcharacter extends Game {
         public void dispose() {
             world.dispose();
             joyStick.dispose();
-            //SocketManager.getInstance().disconnect();
             mSocketManager.disconnect();
         }
 
@@ -169,13 +169,30 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
-            else if (type == "notify login") {
+            else if (type == "answer login") {      // answer to add userlist
                 JSONObject data = (JSONObject) args[0];
                 try {
-                    String username = data.getString("username");
-                    int numbers = data.getInt("numUsers");
-                    Gdx.app.log("SOCKET.IO", "username: " + username + ", usercount: " + numbers);
-                    this.mPlay.addPlayers(username);
+                    int numUsers = data.getInt("numUsers");
+                    JSONArray users = data.getJSONArray("aryUsers");
+                    if(users != null && users.length() > 0) {
+                        for(int i=0; i<users.length(); i++) {
+                            JSONObject objectInArray = users.getJSONObject(i);
+                            Gdx.app.log("SOCKET.IO", "username: " + objectInArray.getString("user_name"));
+                            Player newPlayer = new Player(objectInArray.getString("user_name"), objectInArray.getDouble("posX"), objectInArray.getDouble("posY"));
+                            this.mPlay.addPlayers(newPlayer);
+                        }
+                    }
+                } catch (JSONException e) {
+                    return;
+                }
+            }
+            else if (type == "notify login") {      // notify to add new_user
+                JSONObject data = (JSONObject) args[0];
+                try {
+                    int numUsers = data.getInt("numUsers");
+                    JSONObject newUser = data.getJSONObject("newUser");
+                    Player newPlayer = new Player(newUser.getString("user_name"), newUser.getDouble("posX"), newUser.getDouble("posY"));
+                    this.mPlay.addPlayers(newPlayer);
                 } catch (JSONException e) {
                     return;
                 }
@@ -183,13 +200,14 @@ public class Tilemapandcharacter extends Game {
             else if (type == "notify moving") {
                 JSONObject data = (JSONObject) args[0];
                 String username;
-                float fX, fY;
+                float fX, fY, fAngle;
                 try {
                     username = data.getString("username");
                     fX = Float.valueOf(String.valueOf(data.getString("X")));
                     fY = Float.valueOf(String.valueOf(data.getString("Y")));
-                    Gdx.app.log("SOCKET.IO", "name: " + username + ", position X: " + fX + ", position Y: " + fY);
-                    this.mPlay.setPlayerPosition(username, fX, fY);
+                    fAngle = Float.valueOf(String.valueOf(data.getString("angle")));
+                    Gdx.app.log("SOCKET.IO", "name: " + username + ", position X: " + fX + ", position Y: " + fY + ", angle: " + fAngle);
+                    this.mPlay.setPlayerPosition(username, fX, fY, fAngle);
                 } catch (JSONException e) {
                     return;
                 }

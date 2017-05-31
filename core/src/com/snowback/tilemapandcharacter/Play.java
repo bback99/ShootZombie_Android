@@ -18,8 +18,8 @@ public class Play {
     private ArrayList<Zombie> mlstZombie;
     private Random random;
 
-    public Play() {
-        mPlayer = new Player("");
+    public Play(Tilemapandcharacter.GameScreen main) {
+        mPlayer = new Player(main.UserName, 0, 0);
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
@@ -33,8 +33,9 @@ public class Play {
            mlstZombie.add(new Zombie(fX, fY));
     }
 
-    public void addPlayers(String username) {
-        mlstPlayers.add(new Player(username));
+    public void addPlayers(Player newPlayer) {
+        if (newPlayer.getUserName() != mPlayer.getUserName())
+            mlstPlayers.add(newPlayer);
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {
@@ -54,14 +55,13 @@ public class Play {
         return mPlayer;
     }
 
-    public void setPlayerPosition(String username, float X, float Y) {
+    public void setPlayerPosition(String username, float X, float Y, float angle) {
 
         for(Player player: mlstPlayers) {
             if (player.getUserName().equals(username)) {
-                //Gdx.app.log("X: ", Integer.toString(X));//, ", Y: " , Integer.toString(Y));
                 player.setX(X);
                 player.setY(Y);
-                //mPlayer.changeDirection(1);
+                player.changeDirection(angle);
                 break;
             }
         }

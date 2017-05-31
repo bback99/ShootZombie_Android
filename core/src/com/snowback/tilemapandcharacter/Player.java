@@ -23,13 +23,16 @@ public class Player extends Sprite {
     private float textureSize = 0.0f;
     private float saveShootingAngle = 0.0f;
 
-    public Player(String username) {
+    public Player(String username, double posX, double posY) {
         mUserName = username;
         animation = AssetManager.getInstance().getAniCharRight();
 
         // just for getting image length
         Texture img1 = new Texture("players/character10/09.png");
         textureSize = img1.getWidth();
+
+        this.setX((float) posX);
+        this.setY((float) posY);
     }
 
     public String getUserName() { return mUserName; }
@@ -56,13 +59,9 @@ public class Player extends Sprite {
             spritebatch.draw((TextureRegion) animation.getKeyFrame(timePassed, true), getX(), getY());
         }
 
-        //Gdx.app.log("X: ", Float.toString(getX()) + ", Y: " + Float.toString(getY()));
-
         for(Bullet bullet: lstBullet) {
             bullet.draw(spritebatch);
         }
-
-        //Gdx.app.log("Bullet Count: ", Integer.toString(lstBullet.size()));
     }
 
     public Boolean updateBullets(ArrayList<Zombie> lstZombie) {
