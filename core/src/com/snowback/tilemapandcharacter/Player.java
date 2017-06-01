@@ -37,7 +37,7 @@ public class Player extends Sprite {
     private float mTextureSize = 0.0f;
     private float mSaveShootingAngle = 0.0f;
     private ArrayList<MovingPosition> mlstMovingPosition = new ArrayList<MovingPosition>();
-    private float mMovingTime = 1.0f;
+    private float mMovingTime = 5.0f;
     private boolean mIsMainPlayer = false;
 
     private Rectangle hitBox;
@@ -100,20 +100,22 @@ public class Player extends Sprite {
                 spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
             }
             else {
-                if (mlstMovingPosition.size() > 0) {
-                    mTimePassed += Gdx.graphics.getDeltaTime();
-                    if (mMovingTime > 0) {
-                        MovingPosition pos = mlstMovingPosition.get(0);
-                        setX(getX() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
-                        setY(getY() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
-                        spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-                        mMovingTime -= mTimePassed;
-                    }
-                    else {
-                        mMovingTime = 1;
+                if (mlstMovingPosition.size() >= 1) {
+                    MovingPosition posPrev = mlstMovingPosition.get(0);
+                    float dx = posPrev.fX - getX();
+                    float dy = posPrev.fX - getY();
+                    float length = (float) Math.sqrt(dx*dx + dy*dy);
+//                    setX(getX() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
+//                    setY(getY() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
+                    setX(getX()+(dx/length));
+                    setY(getY()+(dy/length));
+                    changeDirection(posPrev.fAngle);
+                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+
+                    if ((mMovingTime -= Gdx.graphics.getDeltaTime()) <= 0) {
+                        mMovingTime = 5.0f;
                         mlstMovingPosition.remove(0);
                     }
-
                 }
             }
         }

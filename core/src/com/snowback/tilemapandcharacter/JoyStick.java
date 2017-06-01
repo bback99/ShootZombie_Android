@@ -180,7 +180,7 @@ public class JoyStick {
         // send player's position to server
         timeForPlayerLocation += Gdx.graphics.getDeltaTime();
         if (timeForPlayerLocation >= 1 && tpDirection.isTouched()) {
-            Vector2 v = new Vector2(tpShooting.getKnobPercentX(), tpShooting.getKnobPercentY());
+            Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
             mGameScreen.getSocketManager().sendPlayerPosition(player.getX(), player.getY(), v.angle());
             timeForPlayerLocation = 0;
         }
