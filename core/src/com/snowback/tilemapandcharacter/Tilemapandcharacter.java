@@ -203,7 +203,7 @@ public class Tilemapandcharacter extends Game {
                 try {
                     int numUsers = data.getInt("numUsers");
                     JSONObject newUser = data.getJSONObject("newUser");
-                    Player newPlayer = new Player(newUser.getString("user_name"), newUser.getDouble("posX"), newUser.getDouble("posY"));
+                    Player newPlayer = new Player(false, newUser.getString("user_name"), newUser.getDouble("posX"), newUser.getDouble("posY"));
                     this.mPlay.addPlayers(newPlayer);
                 } catch (JSONException e) {
                     return;
