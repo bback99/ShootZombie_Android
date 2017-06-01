@@ -17,25 +17,42 @@ import java.util.ArrayList;
 
 public class Player extends Sprite {
 
+    public class MovingPosition {
+        public float fX;
+        public float fY;
+        public float fAngle;
+
+        MovingPosition(float x, float y, float angle) {
+            fX = x;
+            fY = y;
+            fAngle = angle;
+        }
+    }
+
     private String mUserName;
-    private Animation animation;
-    private float timePassed = 0;
-    private boolean bIsPlayingAnimation = false;
-    private ArrayList<Bullet> lstBullet = new ArrayList<Bullet>();
-    private float textureSize = 0.0f;
-    private float saveShootingAngle = 0.0f;
+    private Animation mAnimation;
+    private float mTimePassed = 0;
+    private boolean mIsPlayingAnimation = false;
+    private ArrayList<Bullet> mlstBullet = new ArrayList<Bullet>();
+    private float mTextureSize = 0.0f;
+    private float mSaveShootingAngle = 0.0f;
+    private ArrayList<MovingPosition> mlstMovingPosition = new ArrayList<MovingPosition>();
+    private float mMovingTime = 1.0f;
+    private boolean mIsMainPlayer = false;
 
     private Rectangle hitBox;
     private Integer health;
     private Integer weaponPower;
 
-    public Player(String username, double posX, double posY) {
+
+    public Player(boolean isMainPlayer, String username, double posX, double posY) {
+        mIsMainPlayer = isMainPlayer;
         mUserName = username;
-        animation = AssetManager.getInstance().getAniCharRight();
+        mAnimation = AssetManager.getInstance().getAniCharRight();
 
         // just for getting image length
         Texture img1 = new Texture("players/character10/09.png");
-        textureSize = img1.getWidth();
+        mTextureSize = img1.getWidth();
 
         this.setX((float) posX);
         this.setY((float) posY);
@@ -45,15 +62,19 @@ public class Player extends Sprite {
         hitBox = new Rectangle(getX(),getY(),100.f,100.f);
     }
 
+    public void addMovingPosition(float X, float Y, float angle) {
+        mlstMovingPosition.add(new MovingPosition(X, Y, angle));
+    }
+
     public String getUserName() { return mUserName; }
 
     public float getTextureSize() {
-        return textureSize;
+        return mTextureSize;
     }
 
     public void AddBullet(float x, float y, float angle) {
         //lstBullet.add(new Bullet(getX(), getY(), angle));
-        lstBullet.add(new Bullet(x, y, angle));
+        mlstBullet.add(new Bullet(x, y, angle));
         //Gdx.app.log("Position: ", "X : " +  x + ", Y: " + y + ", Angle: " + angle);
     }
 
@@ -67,24 +88,43 @@ public class Player extends Sprite {
             health = 100;
         }
 
-        if(bIsPlayingAnimation) {
-            timePassed += Gdx.graphics.getDeltaTime();
+        if(mIsPlayingAnimation) {
+            mTimePassed += Gdx.graphics.getDeltaTime();
         }
 
-        if (animation == null) {
-            animation = AssetManager.getInstance().getAniCharRight();
+        if (mAnimation == null) {
+            mAnimation = AssetManager.getInstance().getAniCharRight();
         }
         else {
-            spritebatch.draw((TextureRegion) animation.getKeyFrame(timePassed, true), getX(), getY());
+            if (mIsMainPlayer) {
+                spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+            }
+            else {
+                if (mlstMovingPosition.size() > 0) {
+                    mTimePassed += Gdx.graphics.getDeltaTime();
+                    if (mMovingTime > 0) {
+                        MovingPosition pos = mlstMovingPosition.get(0);
+                        setX(getX() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
+                        setY(getY() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
+                        spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+                        mMovingTime -= mTimePassed;
+                    }
+                    else {
+                        mMovingTime = 1;
+                        mlstMovingPosition.remove(0);
+                    }
+
+                }
+            }
         }
 
-        for(Bullet bullet: lstBullet) {
+        for(Bullet bullet: mlstBullet) {
             bullet.draw(spritebatch);
         }
     }
 
     public Boolean updateBullets(ArrayList<Zombie> lstZombie) {
-        for(Bullet bullet: lstBullet) {
+        for(Bullet bullet: mlstBullet) {
             bullet.update(Gdx.graphics.getDeltaTime());
 
             // check to collide any zombies
@@ -95,7 +135,7 @@ public class Player extends Sprite {
                         lstZombie.remove(zombie);
                         return true;
                     }
-                    lstBullet.remove(bullet);
+                    mlstBullet.remove(bullet);
                     return false;
                 }
             }
@@ -103,54 +143,54 @@ public class Player extends Sprite {
             // check bounds and remove it in lstBullet
             float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) World.width*15, topRightY = (float) World.height*15;
             if (bullet.getHitBox().getX() <= bottomLeftX || bullet.getHitBox().getX() >= topRightX) {
-                lstBullet.remove(bullet);
+                mlstBullet.remove(bullet);
                 return false;
             }
             else if (bullet.getHitBox().getY() <= bottomLeftY || bullet.getHitBox().getY() >= topRightY) {
-                lstBullet.remove(bullet);
+                mlstBullet.remove(bullet);
                 return false;
             }
         }
         return false;
     }
 
-    public float getShootingAngle() { return saveShootingAngle; }
+    public float getShootingAngle() { return mSaveShootingAngle; }
 
     public void changeDirection(float angle) {
 
-        this.saveShootingAngle = angle;
+        this.mSaveShootingAngle = angle;
 
         if (angle < 0) {
-            bIsPlayingAnimation = false;
+            mIsPlayingAnimation = false;
             return;
         }
 
-        bIsPlayingAnimation = true;
+        mIsPlayingAnimation = true;
 
         // for example using texture from files
         if (angle >= 25 && angle <= 70) {  // right-down
-            animation = AssetManager.getInstance().getAniCharRightDown();
+            mAnimation = AssetManager.getInstance().getAniCharRightDown();
         }
         else if (angle >= 70 && angle <= 115) { // down
-            animation = AssetManager.getInstance().getAniCharDown();
+            mAnimation = AssetManager.getInstance().getAniCharDown();
         }
         else if (angle >= 115 && angle <= 160) { // down-left
-            animation = AssetManager.getInstance().getAniCharDownLeft();
+            mAnimation = AssetManager.getInstance().getAniCharDownLeft();
         }
         else if (angle >= 160 && angle <= 205) { // left
-            animation = AssetManager.getInstance().getAniCharLeft();
+            mAnimation = AssetManager.getInstance().getAniCharLeft();
         }
         else if (angle >= 205 && angle <= 250) { // left-up
-            animation = AssetManager.getInstance().getAniCharLeftUp();
+            mAnimation = AssetManager.getInstance().getAniCharLeftUp();
         }
         else if (angle >= 250 && angle <= 295) { // up
-            animation = AssetManager.getInstance().getAniCharUp();
+            mAnimation = AssetManager.getInstance().getAniCharUp();
         }
         else if (angle >= 295 && angle <= 340) {  // up-right
-            animation = AssetManager.getInstance().getAniCharUpRight();
+            mAnimation = AssetManager.getInstance().getAniCharUpRight();
         }
         else {  // right        // for example using atlas
-            animation = AssetManager.getInstance().getAniCharRight();
+            mAnimation = AssetManager.getInstance().getAniCharRight();
         }
     }
 

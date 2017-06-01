@@ -190,7 +190,7 @@ public class Tilemapandcharacter extends Game {
                         for(int i=0; i<users.length(); i++) {
                             JSONObject objectInArray = users.getJSONObject(i);
                             Gdx.app.log("SOCKET.IO", "username: " + objectInArray.getString("user_name"));
-                            Player newPlayer = new Player(objectInArray.getString("user_name"), objectInArray.getDouble("posX"), objectInArray.getDouble("posY"));
+                            Player newPlayer = new Player(false, objectInArray.getString("user_name"), objectInArray.getDouble("posX"), objectInArray.getDouble("posY"));
                             this.mPlay.addPlayers(newPlayer);
                         }
                     }

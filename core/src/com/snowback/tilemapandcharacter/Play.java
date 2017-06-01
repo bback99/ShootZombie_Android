@@ -19,7 +19,7 @@ public class Play {
     private Random random;
 
     public Play(Tilemapandcharacter.GameScreen main) {
-        mPlayer = new Player(main.UserName, 0, 0);
+        mPlayer = new Player(true, main.UserName, 0, 0);       // for main player
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
@@ -33,7 +33,7 @@ public class Play {
            mlstZombie.add(new Zombie(fX, fY));
     }
 
-    public void addPlayers(Player newPlayer) {
+    public void addPlayers(Player newPlayer) {                  // for other players
         if (newPlayer.getUserName() != mPlayer.getUserName())
             mlstPlayers.add(newPlayer);
     }
@@ -59,9 +59,7 @@ public class Play {
 
         for(Player player: mlstPlayers) {
             if (player.getUserName().equals(username)) {
-                player.setX(X);
-                player.setY(Y);
-                player.changeDirection(angle);
+                player.addMovingPosition(X, Y, angle);
                 break;
             }
         }
