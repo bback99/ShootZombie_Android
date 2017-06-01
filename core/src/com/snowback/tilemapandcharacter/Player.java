@@ -37,7 +37,7 @@ public class Player extends Sprite {
     private float mTextureSize = 0.0f;
     private float mSaveShootingAngle = 0.0f;
     private ArrayList<MovingPosition> mlstMovingPosition = new ArrayList<MovingPosition>();
-    private float mMovingTime = 5.0f;
+    private float mMovingTime = 3.0f;
     private boolean mIsMainPlayer = false;
 
     private Rectangle hitBox;
@@ -88,9 +88,9 @@ public class Player extends Sprite {
             health = 100;
         }
 
-        if(mIsPlayingAnimation) {
+        //if(mIsPlayingAnimation) {
             mTimePassed += Gdx.graphics.getDeltaTime();
-        }
+        //}
 
         if (mAnimation == null) {
             mAnimation = AssetManager.getInstance().getAniCharRight();
@@ -98,24 +98,62 @@ public class Player extends Sprite {
         else {
             if (mIsMainPlayer) {
                 spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+
+//                if (mlstMovingPosition.size() >= 1) {
+//                    MovingPosition posPrev = mlstMovingPosition.get(0);
+//                    changeDirection(posPrev.fAngle);
+//                    float dx = posPrev.fX - getX();
+//                    float dy = posPrev.fY - getY();
+//                    float length = (float) Math.sqrt(dx*dx + dy*dy);
+//                    //float delta = Gdx.graphics.getDeltaTime();
+//                    setX(getX() + (dx/length));
+//                    setY(getY() + (dy/length));
+//
+//                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+//                    Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", Angle: " + posPrev.fAngle);
+//                    Gdx.app.log("Moving Position: ", "CurrPos X : " +  getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
+//                    Gdx.app.log("Moving Position: ", "MovingTime : " +  mMovingTime + ", TimePassed: " + mTimePassed);
+//
+//
+//
+//                    if ((mMovingTime -= mTimePassed) <= 0) {
+//                        mMovingTime = 3.0f;
+//                        mlstMovingPosition.remove(0);
+//                    }
+//                }
+//                else {
+//                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+//                }
             }
             else {
                 if (mlstMovingPosition.size() >= 1) {
                     MovingPosition posPrev = mlstMovingPosition.get(0);
+                    changeDirection(posPrev.fAngle);
                     float dx = posPrev.fX - getX();
-                    float dy = posPrev.fX - getY();
+                    float dy = posPrev.fY - getY();
                     float length = (float) Math.sqrt(dx*dx + dy*dy);
-//                    setX(getX() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
-//                    setY(getY() + 300 * (float)Math.cos(pos.fAngle*Math.PI/180) * mTimePassed);
+                    //float delta = Gdx.graphics.getDeltaTime();
                     setX(getX()+(dx/length));
                     setY(getY()+(dy/length));
-                    changeDirection(posPrev.fAngle);
+
                     spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
 
-                    if ((mMovingTime -= Gdx.graphics.getDeltaTime()) <= 0) {
-                        mMovingTime = 5.0f;
+                    //Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", Angle: " + posPrev.fAngle);
+                    //Gdx.app.log("Moving Position: ", "CurrPos X : " +  getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
+
+
+
+                    if ((mMovingTime -= mTimePassed) <= 0) {
+                        mMovingTime = 1.0f;
                         mlstMovingPosition.remove(0);
                     }
+                    else {
+                        Gdx.app.log("mMovingTime ", "time: " + mMovingTime);
+                    }
+                }
+                else {
+                    mIsPlayingAnimation = false;
+                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
                 }
             }
         }

@@ -20,11 +20,17 @@ public class Play {
 
     public Play(Tilemapandcharacter.GameScreen main) {
         mPlayer = new Player(true, main.UserName, 0, 0);       // for main player
+
+        // for test
+        //mPlayer.addMovingPosition(mPlayer.getX(), mPlayer.getY(), 0);
+        mPlayer.addMovingPosition(mPlayer.getX() + 50, mPlayer.getY() + 50, 350.0f);
+
+
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
 
-        for (int i=0; i<3; i++) {
+        for (int i=0; i<0; i++) {
             mlstZombie.add(new Zombie(Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE)));
         }
     }

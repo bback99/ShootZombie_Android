@@ -43,8 +43,9 @@ public class Tilemapandcharacter extends Game {
 
         SpriteBatch batch;
 
-        public static final String CHAT_SERVER_URL = "http://10.0.2.2:13337/";
-        public static final String UserName = "Snow";
+        //public static final String CHAT_SERVER_URL = "http://10.0.2.2:13337/";
+        public static final String CHAT_SERVER_URL = "http://192.168.0.104:13337/";
+        public static final String UserName = "John Snow";
 
         public SocketManager getSocketManager() {
             return mSocketManager;
