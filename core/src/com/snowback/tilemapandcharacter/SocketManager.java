@@ -104,7 +104,15 @@ public class SocketManager {
     public Boolean isConnected() { return isConnected; }
 
     public void attempLogin() {
-        mSocket.emit("request login", mMain.UserName);
+        JSONObject user = new JSONObject();
+        try {
+            user.put("username", mMain.UserName);
+            user.put("X", mMain.getPlay().getPlayer().getX());
+            user.put("Y", mMain.getPlay().getPlayer().getY());
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        mSocket.emit("request login", user);
     }
     public void sendPlayerPosition(float fX, float fY, float angle) {
         JSONObject position = new JSONObject();
