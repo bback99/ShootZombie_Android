@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
+import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.math.Vector3;
 
 import java.util.ArrayList;
 
@@ -43,6 +45,7 @@ public class Player extends Sprite {
     private Rectangle hitBox;
     private Integer health;
     private Integer weaponPower;
+    private MovingPosition posPrev = null;
 
 
     public Player(boolean isMainPlayer, String username, double posX, double posY) {
@@ -63,7 +66,9 @@ public class Player extends Sprite {
     }
 
     public void addMovingPosition(float X, float Y, float angle) {
-        mlstMovingPosition.add(new MovingPosition(X, Y, angle));
+        if (mlstMovingPosition.size() <= 0) {
+            mlstMovingPosition.add(new MovingPosition(X, Y, angle));
+        }
     }
 
     public String getUserName() { return mUserName; }
@@ -88,9 +93,7 @@ public class Player extends Sprite {
             health = 100;
         }
 
-        //if(mIsPlayingAnimation) {
-            mTimePassed += Gdx.graphics.getDeltaTime();
-        //}
+
 
         if (mAnimation == null) {
             mAnimation = AssetManager.getInstance().getAniCharRight();
@@ -98,64 +101,78 @@ public class Player extends Sprite {
         else {
             if (mIsMainPlayer) {
                 spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+            }
+            else {
+                mTimePassed += Gdx.graphics.getDeltaTime();
 
+                if (mlstMovingPosition.size() >= 1) {
+                    posPrev = mlstMovingPosition.get(0);
+                }
+                else {
+                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+                    posPrev = null;
+                }
+
+                if (posPrev != null) {
+                    changeDirection(posPrev.fAngle);
+
+                    float dx = posPrev.fX - getX();
+                    float dy = posPrev.fY - getY();
+                    double length = Math.sqrt(dx * dx + dy * dy);
+                    if (length <= 0.5) {
+                        mlstMovingPosition.remove(0);
+                    }
+                    else {
+                        //float delta = Gdx.graphics.getDeltaTime();
+                        Vector2 normal = new Vector2(dx / (float) length, dy / (float) length);
+                        float x = getX();
+                        x += normal.x;
+                        float y = getY();
+                        y += normal.y;
+
+                        setX(x);
+                        setY(y);
+
+                        spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
+                        Gdx.app.log("Moving Position: ", "PrevPos X : " + posPrev.fX + ", Y: " + posPrev.fY + ", length: " + length);
+                        Gdx.app.log("Moving Position: ", "CurrPos X : " + getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
+                        Gdx.app.log("Moving Position: ", "MovingTime : " + mMovingTime + ", TimePassed: " + mTimePassed);
+                    }
+                }
+            }
+//            else {
 //                if (mlstMovingPosition.size() >= 1) {
+//                    if(mIsPlayingAnimation) {
+//                        mTimePassed += Gdx.graphics.getDeltaTime();
+//                    }
+//
 //                    MovingPosition posPrev = mlstMovingPosition.get(0);
 //                    changeDirection(posPrev.fAngle);
 //                    float dx = posPrev.fX - getX();
 //                    float dy = posPrev.fY - getY();
 //                    float length = (float) Math.sqrt(dx*dx + dy*dy);
 //                    //float delta = Gdx.graphics.getDeltaTime();
-//                    setX(getX() + (dx/length));
-//                    setY(getY() + (dy/length));
+//                    setX(getX()+(dx/length));
+//                    setY(getY()+(dy/length));
 //
 //                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-//                    Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", Angle: " + posPrev.fAngle);
+//                    Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", length: " + length);
 //                    Gdx.app.log("Moving Position: ", "CurrPos X : " +  getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
 //                    Gdx.app.log("Moving Position: ", "MovingTime : " +  mMovingTime + ", TimePassed: " + mTimePassed);
 //
-//
-//
 //                    if ((mMovingTime -= mTimePassed) <= 0) {
-//                        mMovingTime = 3.0f;
+//                        mMovingTime = 1.0f;
 //                        mlstMovingPosition.remove(0);
+//                    }
+//                    else {
+//                        Gdx.app.log("mMovingTime ", "time: " + mMovingTime);
 //                    }
 //                }
 //                else {
+//                    mIsPlayingAnimation = false;
 //                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
 //                }
-            }
-            else {
-                if (mlstMovingPosition.size() >= 1) {
-                    MovingPosition posPrev = mlstMovingPosition.get(0);
-                    changeDirection(posPrev.fAngle);
-                    float dx = posPrev.fX - getX();
-                    float dy = posPrev.fY - getY();
-                    float length = (float) Math.sqrt(dx*dx + dy*dy);
-                    //float delta = Gdx.graphics.getDeltaTime();
-                    setX(getX()+(dx/length));
-                    setY(getY()+(dy/length));
-
-                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-
-                    //Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", Angle: " + posPrev.fAngle);
-                    //Gdx.app.log("Moving Position: ", "CurrPos X : " +  getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
-
-
-
-                    if ((mMovingTime -= mTimePassed) <= 0) {
-                        mMovingTime = 1.0f;
-                        mlstMovingPosition.remove(0);
-                    }
-                    else {
-                        Gdx.app.log("mMovingTime ", "time: " + mMovingTime);
-                    }
-                }
-                else {
-                    mIsPlayingAnimation = false;
-                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-                }
-            }
+//            }
         }
 
         for(Bullet bullet: mlstBullet) {

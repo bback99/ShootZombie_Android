@@ -23,7 +23,7 @@ public class Play {
 
         // for test
         //mPlayer.addMovingPosition(mPlayer.getX(), mPlayer.getY(), 0);
-        mPlayer.addMovingPosition(mPlayer.getX() + 50, mPlayer.getY() + 50, 350.0f);
+        //mPlayer.addMovingPosition(mPlayer.getX() + 50, mPlayer.getY() + 50, 350.0f);
 
 
         mlstZombie = new ArrayList<Zombie>();

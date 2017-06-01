@@ -1,0 +1,4 @@
+#Thu Jun 01 15:05:21 EDT 2017
+base.0=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4
+renamed.0=classes.dex
+file.0=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_4\\classes.dex

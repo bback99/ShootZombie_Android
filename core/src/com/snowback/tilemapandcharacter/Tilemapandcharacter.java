@@ -3,11 +3,13 @@ package com.snowback.tilemapandcharacter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.assets.*;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Vector3;
 import com.snowback.tilemapandcharacter.UI.HUD;
 
 import org.json.JSONArray;
@@ -156,6 +158,13 @@ public class Tilemapandcharacter extends Game {
             if(Gdx.input.isKeyPressed(Input.Keys.W) || (Gdx.input.isKeyPressed(Input.Keys.UP)))
             {
                 mPlay.setPlayPositionUP(joyStick);
+            }
+
+            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
+                Gdx.app.log("AAAA", "AAAAA");
+                Vector3 vector3 = new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0);
+                camera.unproject(vector3);
+                this.mPlay.getPlayer().addMovingPosition(vector3.x, vector3.y, 0.0f);
             }
         }
 

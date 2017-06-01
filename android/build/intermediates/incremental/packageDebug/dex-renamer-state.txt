@@ -1,0 +1,7 @@
+#Thu Jun 01 15:05:22 EDT 2017
+base.0=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_779c161764563b7359ec76c9a0177336b0b99c7d
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15592e125c8cbe803e2155a0d84f8bde2f96706d\\classes.dex
+base.1=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_15592e125c8cbe803e2155a0d84f8bde2f96706d
+file.0=G\:\\Snow\\workspace\\4. lambton\\GDX\\ShootZombie_Android\\android\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_779c161764563b7359ec76c9a0177336b0b99c7d\\classes.dex
