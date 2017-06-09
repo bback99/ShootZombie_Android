@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class AssetManager {
 
+    // SingleTon Pattern one of the Design Pattern for Programming Language
     private static AssetManager mInstance = null;
 
     protected AssetManager() {

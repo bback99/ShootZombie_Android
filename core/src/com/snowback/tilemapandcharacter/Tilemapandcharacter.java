@@ -3,13 +3,12 @@ package com.snowback.tilemapandcharacter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
-import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.assets.*;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector3;
+import com.snowback.tilemapandcharacter.Network.DataCallback;
 import com.snowback.tilemapandcharacter.UI.HUD;
 
 import org.json.JSONArray;
@@ -34,23 +33,24 @@ public class Tilemapandcharacter extends Game {
         setScreen(new GameScreen());
     }
 
-    public class GameScreen implements Screen, ISocketListener {
+    public class GameScreen implements Screen {
 
         private OrthographicCamera camera; //2D camera
         private World world;
         private Play mPlay;
         private JoyStick joyStick;
-        private SocketManager mSocketManager;
+        private com.snowback.tilemapandcharacter.Network.MessageHandler mMessageHandler;
         private HUD hud;
 
         SpriteBatch batch;
 
-        //public static final String CHAT_SERVER_URL = "http://10.0.2.2:13337/";
-        public static final String CHAT_SERVER_URL = "http://192.168.0.104:13337/";
-        public static final String UserName = "John Snow";
+        public static final String CHAT_SERVER_URL = "http://10.0.2.2:3010/";
+        //public static final String CHAT_SERVER_URL = "http://10.51.205.75:3010/";
+        //public static final String CHAT_SERVER_URL = "http://192.168.0.103:13337/";
+        public static final String UserName = "Snow John";
 
-        public SocketManager getSocketManager() {
-            return mSocketManager;
+        public com.snowback.tilemapandcharacter.Network.MessageHandler getMessageHandler() {
+            return mMessageHandler;
         }
 
         @Override
@@ -70,8 +70,16 @@ public class Tilemapandcharacter extends Game {
             hud = new HUD(batch, this);
             joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
 
-            mSocketManager = new SocketManager(this);
-            mSocketManager.connect(CHAT_SERVER_URL);
+            mMessageHandler = new com.snowback.tilemapandcharacter.Network.MessageHandler(this);
+            if (mMessageHandler.connect(CHAT_SERVER_URL)) {
+                Gdx.app.log("DEBUG", "Connected!!!");
+                mMessageHandler.requestAttempLogin(UserName, mPlay.getPlayer().getX(), mPlay.getPlayer().getY(), new DataCallback() {
+                    @Override
+                    public void responseData(JSONObject message) {
+                        Gdx.app.log("INFO", "RecvData : " + message.toString());
+                    }
+                });
+            }
         }
 
         @Override
@@ -136,7 +144,7 @@ public class Tilemapandcharacter extends Game {
         public void dispose() {
             world.dispose();
             joyStick.dispose();
-            mSocketManager.disconnect();
+            mMessageHandler.disconnect();
         }
 
         public void generalUpdate(){
@@ -161,7 +169,6 @@ public class Tilemapandcharacter extends Game {
             }
 
             if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                Gdx.app.log("AAAA", "AAAAA");
                 Vector3 vector3 = new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0);
                 camera.unproject(vector3);
                 this.mPlay.getPlayer().addMovingPosition(vector3.x, vector3.y, 0.0f);
@@ -220,15 +227,16 @@ public class Tilemapandcharacter extends Game {
                 }
             }
             else if (type == "notify moving") {
-                JSONObject data = (JSONObject) args[0];
+                JSONObject packet = (JSONObject) args[0];
                 String username;
                 float fX, fY, fAngle;
                 try {
+                    JSONObject data = packet.getJSONObject("body");
                     username = data.getString("username");
                     fX = Float.valueOf(String.valueOf(data.getString("X")));
                     fY = Float.valueOf(String.valueOf(data.getString("Y")));
                     fAngle = Float.valueOf(String.valueOf(data.getString("angle")));
-                    Gdx.app.log("SOCKET.IO", "name: " + username + ", position X: " + fX + ", position Y: " + fY + ", angle: " + fAngle);
+                    //Gdx.app.log("SOCKET.IO", "name: " + username + ", position X: " + fX + ", position Y: " + fY + ", angle: " + fAngle);
                     this.mPlay.setPlayerPosition(username, fX, fY, fAngle);
                 } catch (JSONException e) {
                     return;

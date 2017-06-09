@@ -96,8 +96,8 @@ public class JoyStick {
         //connect to hero sprite
         //Set position to centre of the screen
         //player.setPosition(Gdx.graphics.getWidth()/2-player.getWidth()/2, Gdx.graphics.getHeight()/2-player.getHeight()/2);
-        //player.setPosition((World.width*15-player.getWidth())/2.0f, (World.height*15-player.getHeight())/2.0f);
-        player.setPosition(0f, 0f);
+        player.setPosition((World.width*15-player.getWidth())/2.0f, (World.height*15-player.getHeight())/2.0f);
+        //player.setPosition(0f, 0f);
         this.camera = camera;
         camera.update();
 
@@ -179,10 +179,19 @@ public class JoyStick {
         }
 
         // send player's position to server
-        timeForPlayerLocation += Gdx.graphics.getDeltaTime();
-        if (timeForPlayerLocation >= 1 && tpDirection.isTouched()) {
+        if (tpDirection.isTouched()) {
+            timeForPlayerLocation += Gdx.graphics.getDeltaTime();
+        }
+        //timeForPlayerLocation += Gdx.graphics.getDeltaTime();
+        if (timeForPlayerLocation >= 0.01 && tpDirection.isTouched()) {
             Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
-            mGameScreen.getSocketManager().sendPlayerPosition(player.getX(), player.getY(), v.angle());
+            mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
+            timeForPlayerLocation = 0;
+        }
+
+        if (!tpDirection.isTouched() && timeForPlayerLocation != 0) {
+            Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
+            mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
             timeForPlayerLocation = 0;
         }
     }

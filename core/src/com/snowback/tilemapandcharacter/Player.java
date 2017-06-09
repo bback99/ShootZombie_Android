@@ -93,7 +93,9 @@ public class Player extends Sprite {
             health = 100;
         }
 
-
+        if (mIsPlayingAnimation) {
+            mTimePassed += Gdx.graphics.getDeltaTime();
+        }
 
         if (mAnimation == null) {
             mAnimation = AssetManager.getInstance().getAniCharRight();

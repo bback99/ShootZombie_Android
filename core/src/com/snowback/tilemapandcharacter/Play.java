@@ -30,7 +30,7 @@ public class Play {
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
 
-        for (int i=0; i<0; i++) {
+        for (int i=0; i<3; i++) {
             mlstZombie.add(new Zombie(Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE)));
         }
     }
