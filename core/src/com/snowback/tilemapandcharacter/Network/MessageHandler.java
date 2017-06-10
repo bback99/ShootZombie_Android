@@ -22,12 +22,34 @@ public class MessageHandler extends SocketManager{
     }
 
     public void initOnReviceDataHandler() {
-        notifyPlayerLocation();
-
-
+        onNotifyLogin();
+        onNotifyPlayerLocation();
+        onUserLeaveFromRoom();
     }
 
-    public void notifyPlayerLocation() {
+    public void onNotifyLogin() {
+        List<DataListener> lstListener = new ArrayList<DataListener>();
+        lstListener.add(new DataListener() {
+            @Override
+            public void receiveData(DataEvent event) {
+                MessageHandler.super.mMain.socketHandler("notify login", event.getMessage());
+            }
+        });
+        super.mMapListeners.put("onNotifyLogin", lstListener);
+    }
+
+    public void onUserLeaveFromRoom() {
+        List<DataListener> lstListener = new ArrayList<DataListener>();
+        lstListener.add(new DataListener() {
+            @Override
+            public void receiveData(DataEvent event) {
+                MessageHandler.super.mMain.socketHandler("notify moving", event.getMessage());
+            }
+        });
+        super.mMapListeners.put("onUserLeaveFromRoom", lstListener);
+    }
+
+    public void onNotifyPlayerLocation() {
         List<DataListener> lstListener = new ArrayList<DataListener>();
         lstListener.add(new DataListener() {
             @Override
@@ -49,7 +71,6 @@ public class MessageHandler extends SocketManager{
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
         request("connector.entryHandler.entry", requestLogin, func);
     }
 
@@ -62,6 +83,6 @@ public class MessageHandler extends SocketManager{
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        notifyMessage("channel.channelHandler.notifyPlayerLocation", ntfUserPosition);
+        notifyMessage("room.roomHandler.notifyPlayerLocation", ntfUserPosition);
     }
 }

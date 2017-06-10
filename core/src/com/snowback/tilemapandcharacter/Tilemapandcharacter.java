@@ -76,7 +76,7 @@ public class Tilemapandcharacter extends Game {
                 mMessageHandler.requestAttempLogin(UserName, mPlay.getPlayer().getX(), mPlay.getPlayer().getY(), new DataCallback() {
                     @Override
                     public void responseData(JSONObject message) {
-                        Gdx.app.log("INFO", "RecvData : " + message.toString());
+                        socketHandler("answer login", message);
                     }
                 });
             }
@@ -201,8 +201,7 @@ public class Tilemapandcharacter extends Game {
             else if (type == "answer login") {      // answer to add userlist
                 JSONObject data = (JSONObject) args[0];
                 try {
-                    int numUsers = data.getInt("numUsers");
-                    JSONArray users = data.getJSONArray("aryUsers");
+                    JSONArray users = data.getJSONArray("users");
                     if(users != null && users.length() > 0) {
                         for(int i=0; i<users.length(); i++) {
                             JSONObject objectInArray = users.getJSONObject(i);
@@ -218,7 +217,6 @@ public class Tilemapandcharacter extends Game {
             else if (type == "notify login") {      // notify to add new_user
                 JSONObject data = (JSONObject) args[0];
                 try {
-                    int numUsers = data.getInt("numUsers");
                     JSONObject newUser = data.getJSONObject("newUser");
                     Player newPlayer = new Player(false, newUser.getString("user_name"), newUser.getDouble("posX"), newUser.getDouble("posY"));
                     this.mPlay.addPlayers(newPlayer);

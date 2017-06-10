@@ -193,34 +193,4 @@ public class SocketManager {
             listener.receiveData(event);
         }
     }
-
-
-
-
-
-
-
-
-
-    private Emitter.Listener onAnswerLogin = new Emitter.Listener() {
-        @Override
-        public void call(Object... args) {
-            mMain.socketHandler("answer login", args);
-        }
-    };
-
-    private Emitter.Listener onNotifyLogin = new Emitter.Listener() {
-        @Override
-        public void call(Object... args) {
-            mMain.socketHandler("notify login", args);
-        }
-    };
-
-
-    private Emitter.Listener onNotifySpawnZombie = new Emitter.Listener() {
-        @Override
-        public void call(Object... args) {
-            mMain.socketHandler("notify spawn zombie", args);
-        }
-    };
 }

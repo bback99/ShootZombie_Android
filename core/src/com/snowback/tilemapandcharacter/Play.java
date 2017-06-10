@@ -40,7 +40,7 @@ public class Play {
     }
 
     public void addPlayers(Player newPlayer) {                  // for other players
-        if (newPlayer.getUserName() != mPlayer.getUserName())
+        if (!newPlayer.getUserName().equals(mPlayer.getUserName()))
             mlstPlayers.add(newPlayer);
     }
 
