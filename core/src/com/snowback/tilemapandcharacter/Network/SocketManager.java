@@ -160,6 +160,9 @@ public class SocketManager {
                 DataCallback cb = mMapCbs.get(id);
                 if(cb != null)
                     cb.responseData(jsonObject.getJSONObject("body"));
+                else {
+                    emit(jsonObject.getJSONObject("body").getString("route"), jsonObject);
+                }
                 mMapCbs.remove(id);
             }
             // broadcast message

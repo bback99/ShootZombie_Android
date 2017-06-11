@@ -217,7 +217,7 @@ public class Tilemapandcharacter extends Game {
             else if (type == "notify login") {      // notify to add new_user
                 JSONObject data = (JSONObject) args[0];
                 try {
-                    JSONObject newUser = data.getJSONObject("newUser");
+                    JSONObject newUser = data.getJSONObject("body");
                     Player newPlayer = new Player(false, newUser.getString("user_name"), newUser.getDouble("posX"), newUser.getDouble("posY"));
                     this.mPlay.addPlayers(newPlayer);
                 } catch (JSONException e) {
@@ -230,10 +230,11 @@ public class Tilemapandcharacter extends Game {
                 float fX, fY, fAngle;
                 try {
                     JSONObject data = packet.getJSONObject("body");
-                    username = data.getString("username");
-                    fX = Float.valueOf(String.valueOf(data.getString("X")));
-                    fY = Float.valueOf(String.valueOf(data.getString("Y")));
-                    fAngle = Float.valueOf(String.valueOf(data.getString("angle")));
+                    JSONObject msg = data.getJSONObject("msg");
+                    username = msg.getString("username");
+                    fX = Float.valueOf(String.valueOf(msg.getString("X")));
+                    fY = Float.valueOf(String.valueOf(msg.getString("Y")));
+                    fAngle = Float.valueOf(String.valueOf(msg.getString("angle")));
                     //Gdx.app.log("SOCKET.IO", "name: " + username + ", position X: " + fX + ", position Y: " + fY + ", angle: " + fAngle);
                     this.mPlay.setPlayerPosition(username, fX, fY, fAngle);
                 } catch (JSONException e) {
