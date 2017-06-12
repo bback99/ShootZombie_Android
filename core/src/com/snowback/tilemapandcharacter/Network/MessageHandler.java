@@ -1,4 +1,5 @@
 package com.snowback.tilemapandcharacter.Network;
+import com.badlogic.gdx.Gdx;
 import com.snowback.tilemapandcharacter.Tilemapandcharacter;
 
 import org.json.JSONException;
@@ -83,6 +84,14 @@ public class MessageHandler extends SocketManager{
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        notifyMessage("room.roomHandler.notifyPlayerLocation", ntfUserPosition);
+        // if use this way to send just for notification, then will get RPC error on server side. How to solve?
+        // notifyMessage("room.roomHandler.notifyPlayerLocation", ntfUserPosition);
+        request("room.roomHandler.notifyPlayerLocation", ntfUserPosition, new DataCallback() {
+
+            @Override
+            public void responseData(JSONObject message) {
+                //Gdx.app.log("GDX", "got a message");
+            }
+        });
     }
 }
