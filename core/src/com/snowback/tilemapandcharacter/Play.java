@@ -34,8 +34,17 @@ public class Play {
     }
 
     public void addPlayers(Player newPlayer) {
-        if (newPlayer.getUserName() != mPlayer.getUserName())
+        if (newPlayer.getUserName().equals(mPlayer.getUserName()) == false)
             mlstPlayers.add(newPlayer);
+    }
+
+    public void removePlayers(String username) {
+        for(Player player: mlstPlayers) {
+            if (player.getUserName().equals(username)) {
+                mlstPlayers.remove(player);
+                break;
+            }
+        }
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {

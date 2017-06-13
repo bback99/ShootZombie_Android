@@ -219,6 +219,18 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
+            else if (type == "notify user left") {
+                JSONObject packet = (JSONObject) args[0];
+                String username;
+                float fX, fY, fAngle;
+                try {
+                    JSONObject data = packet.getJSONObject("body");
+                    username = data.getString("user");
+                    this.mPlay.removePlayers(username);
+                } catch (JSONException e) {
+                    return;
+                }
+            }
         }
     }
 }

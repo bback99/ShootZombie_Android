@@ -43,7 +43,7 @@ public class MessageHandler extends SocketManager{
         lstListener.add(new DataListener() {
             @Override
             public void receiveData(DataEvent event) {
-                MessageHandler.super.mMain.socketHandler("notify moving", event.getMessage());
+                MessageHandler.super.mMain.socketHandler("notify user left", event.getMessage());
             }
         });
         super.mMapListeners.put("onUserLeaveFromRoom", lstListener);

@@ -40,6 +40,8 @@ public class JoyStick {
     private float timeForPlayerLocation = 0.0f;
     Tilemapandcharacter.GameScreen mGameScreen;
 
+    private boolean mIsToogle = false;
+
 
    public JoyStick(Player heroSprite, OrthographicCamera camera, Tilemapandcharacter.GameScreen gameScreen) {
        this.player = heroSprite;
@@ -180,15 +182,17 @@ public class JoyStick {
         // send player's position to server
         if (tpDirection.isTouched()) {
             timeForPlayerLocation += Gdx.graphics.getDeltaTime();
+            mIsToogle = true;
         }
-        //timeForPlayerLocation += Gdx.graphics.getDeltaTime();
-        if (timeForPlayerLocation >= 0.01 && tpDirection.isTouched()) {
-            Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
-            mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
-            timeForPlayerLocation = 0;
+        else {
+            if (mIsToogle) {
+                Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
+                mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
+                mIsToogle = false;
+            }
         }
 
-        if (!tpDirection.isTouched() && timeForPlayerLocation != 0) {
+        if (timeForPlayerLocation >= 0.0001 && tpDirection.isTouched()) {
             Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
             mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
             timeForPlayerLocation = 0;
