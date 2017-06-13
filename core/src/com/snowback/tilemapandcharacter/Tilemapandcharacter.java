@@ -7,8 +7,11 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.math.Vector3;
+import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TmxMapLoader;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.snowback.tilemapandcharacter.Network.DataCallback;
+import com.snowback.tilemapandcharacter.Network.MessageHandler;
 import com.snowback.tilemapandcharacter.UI.HUD;
 
 import org.json.JSONArray;
@@ -16,7 +19,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class Tilemapandcharacter extends Game {
-
     public interface Listener {
         void example(String data);
     }
@@ -39,10 +41,11 @@ public class Tilemapandcharacter extends Game {
         private World world;
         private Play mPlay;
         private JoyStick joyStick;
-        private com.snowback.tilemapandcharacter.Network.MessageHandler mMessageHandler;
+        private MessageHandler mMessageHandler;
         private HUD hud;
 
         SpriteBatch batch;
+
 
         public static final String CHAT_SERVER_URL = "http://10.0.2.2:3010/";
         //public static final String CHAT_SERVER_URL = "http://10.51.205.75:3010/";
@@ -55,9 +58,7 @@ public class Tilemapandcharacter extends Game {
 
         @Override
         public void show() {
-
             AssetManager.getInstance().Init();
-
             batch = new SpriteBatch();
             this.camera = new OrthographicCamera();
             this.camera.setToOrtho(false, Gdx.graphics.getWidth() / 2, Gdx.graphics.getHeight() / 2);
@@ -84,7 +85,6 @@ public class Tilemapandcharacter extends Game {
 
         @Override
         public void render(float delta) {
-
             // this sequence is very important for using libGDX AssetManager
             if (AssetManager.getInstance().getAssetManager().update()) {        // waiting for loading resources
                 if (!AssetManager.getInstance().isbIsLoaded()) {                // if done?
@@ -102,6 +102,7 @@ public class Tilemapandcharacter extends Game {
 
                 batch.setProjectionMatrix(camera.combined);
 
+
                 world.render(camera);
                 joyStick.render(camera);
 
@@ -109,7 +110,6 @@ public class Tilemapandcharacter extends Game {
                 generalUpdate();
                 mPlay.render(camera, batch);
                 batch.end();
-
                 // update bullet
                 mPlay.updateBullets();
                 mPlay.updateEnemy(delta);
@@ -120,31 +120,8 @@ public class Tilemapandcharacter extends Game {
             }
             else{
                 Gdx.app.log("Loading Resources", Float.toString(AssetManager.getInstance().getAssetManager().getProgress()));
-
                 // later on display loading bar here
             }
-        }
-
-        @Override
-        public void pause() {
-
-        }
-
-        @Override
-        public void resume() {
-
-        }
-
-        @Override
-        public void hide() {
-
-        }
-
-        @Override
-        public void dispose() {
-            world.dispose();
-            joyStick.dispose();
-            mMessageHandler.disconnect();
         }
 
         public void generalUpdate(){
@@ -167,18 +144,20 @@ public class Tilemapandcharacter extends Game {
             {
                 mPlay.setPlayPositionUP(joyStick);
             }
-
-            if(Gdx.input.isButtonPressed(Input.Buttons.LEFT)) {
-                Vector3 vector3 = new Vector3(Gdx.input.getX(), Gdx.input.getY(), 0);
-                camera.unproject(vector3);
-                this.mPlay.getPlayer().addMovingPosition(vector3.x, vector3.y, 0.0f);
-            }
         }
 
         @Override public void resize(int width, int height) {
             if (mListener != null) {
                 mListener.example("resize is called.");
             }
+        }
+        @Override public void hide() {}
+        @Override public void pause() {}
+        @Override public void resume() {}
+        @Override public void dispose() {
+            world.dispose();
+            joyStick.dispose();
+            mMessageHandler.disconnect();
         }
 
         public Play getPlay(){

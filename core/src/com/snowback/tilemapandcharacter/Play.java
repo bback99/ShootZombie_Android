@@ -13,39 +13,32 @@ import java.util.Random;
 
 public class Play {
 
-    private Player mPlayer;     // for main character
+    private Player mPlayer;
     private ArrayList<Player> mlstPlayers;       // for other players
     private ArrayList<Zombie> mlstZombie;
     private Random random;
 
     public Play(Tilemapandcharacter.GameScreen main) {
         mPlayer = new Player(true, main.UserName, 0, 0);       // for main player
-
-        // for test
-        //mPlayer.addMovingPosition(mPlayer.getX(), mPlayer.getY(), 0);
-        //mPlayer.addMovingPosition(mPlayer.getX() + 50, mPlayer.getY() + 50, 350.0f);
-
-
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
 
         for (int i=0; i<3; i++) {
-            mlstZombie.add(new Zombie(Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE)));
+            addZombie(Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE));
         }
     }
 
     public void addZombie(float fX, float fY) {
-           mlstZombie.add(new Zombie(fX, fY));
+        mlstZombie.add(new Zombie(fX, fY));
     }
 
-    public void addPlayers(Player newPlayer) {                  // for other players
-        if (!newPlayer.getUserName().equals(mPlayer.getUserName()))
+    public void addPlayers(Player newPlayer) {
+        if (newPlayer.getUserName() != mPlayer.getUserName())
             mlstPlayers.add(newPlayer);
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {
-
         for(Zombie zombie: mlstZombie) {
             zombie.draw(batch);
         }
@@ -113,5 +106,9 @@ public class Play {
         for(Zombie zombie: mlstZombie){
             zombie.update(dt, mPlayer);
         }
+    }
+
+    public ArrayList<Zombie> getZombie() {
+        return mlstZombie;
     }
 }

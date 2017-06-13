@@ -97,7 +97,6 @@ public class JoyStick {
         //Set position to centre of the screen
         //player.setPosition(Gdx.graphics.getWidth()/2-player.getWidth()/2, Gdx.graphics.getHeight()/2-player.getHeight()/2);
         player.setPosition((World.width*15-player.getWidth())/2.0f, (World.height*15-player.getHeight())/2.0f);
-        //player.setPosition(0f, 0f);
         this.camera = camera;
         camera.update();
 

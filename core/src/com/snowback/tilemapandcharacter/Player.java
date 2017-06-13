@@ -9,7 +9,6 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.math.Vector3;
 
 import java.util.ArrayList;
 
@@ -34,19 +33,25 @@ public class Player extends Sprite {
     private String mUserName;
     private Animation mAnimation;
     private float mTimePassed = 0;
-    private boolean mIsPlayingAnimation = false;
-    private ArrayList<Bullet> mlstBullet = new ArrayList<Bullet>();
-    private float mTextureSize = 0.0f;
+    private boolean bIsPlayingAnimation = false;
+    private ArrayList<Bullet> lstBullet = new ArrayList<Bullet>();
+    private float textureSize = 0.0f;
     private float mSaveShootingAngle = 0.0f;
     private ArrayList<MovingPosition> mlstMovingPosition = new ArrayList<MovingPosition>();
     private float mMovingTime = 3.0f;
     private boolean mIsMainPlayer = false;
+    private float saveShootingAngle = 0.0f;
 
     private Rectangle hitBox;
     private Integer health;
     private Integer weaponPower;
     private MovingPosition posPrev = null;
 
+    //Hp Bar
+    private Texture hpBarTexture;
+    private Texture hpBarBoarderTexture;
+    private Sprite hpBar;
+    private Sprite hpBarBorder;
 
     public Player(boolean isMainPlayer, String username, double posX, double posY) {
         mIsMainPlayer = isMainPlayer;
@@ -55,14 +60,24 @@ public class Player extends Sprite {
 
         // just for getting image length
         Texture img1 = new Texture("players/character10/09.png");
-        mTextureSize = img1.getWidth();
+        textureSize = img1.getWidth();
 
         this.setX((float) posX);
         this.setY((float) posY);
 
+        //Debug method is in the "draw()" function;
         health = 100;
         weaponPower = 2;
         hitBox = new Rectangle(getX(),getY(),100.f,100.f);
+
+
+        hpBarTexture = AssetManager.getInstance().getHealthBar();
+        hpBarBoarderTexture = AssetManager.getInstance().getHealthBarBorder();
+        hpBar = new Sprite(hpBarTexture,400,50);
+        hpBarBorder = new Sprite(hpBarBoarderTexture);
+
+        hpBar.setOrigin(0,0);
+        hpBarBorder.setScale(0.2f,0.2f);
     }
 
     public void addMovingPosition(float X, float Y, float angle) {
@@ -72,14 +87,13 @@ public class Player extends Sprite {
     }
 
     public String getUserName() { return mUserName; }
-
     public float getTextureSize() {
-        return mTextureSize;
+        return textureSize;
     }
 
     public void AddBullet(float x, float y, float angle) {
         //lstBullet.add(new Bullet(getX(), getY(), angle));
-        mlstBullet.add(new Bullet(x, y, angle));
+        lstBullet.add(new Bullet(x, y, angle));
         //Gdx.app.log("Position: ", "X : " +  x + ", Y: " + y + ", Angle: " + angle);
     }
 
@@ -93,7 +107,7 @@ public class Player extends Sprite {
             health = 100;
         }
 
-        if (mIsPlayingAnimation) {
+        if(bIsPlayingAnimation) {
             mTimePassed += Gdx.graphics.getDeltaTime();
         }
 
@@ -142,48 +156,22 @@ public class Player extends Sprite {
                     }
                 }
             }
-//            else {
-//                if (mlstMovingPosition.size() >= 1) {
-//                    if(mIsPlayingAnimation) {
-//                        mTimePassed += Gdx.graphics.getDeltaTime();
-//                    }
-//
-//                    MovingPosition posPrev = mlstMovingPosition.get(0);
-//                    changeDirection(posPrev.fAngle);
-//                    float dx = posPrev.fX - getX();
-//                    float dy = posPrev.fY - getY();
-//                    float length = (float) Math.sqrt(dx*dx + dy*dy);
-//                    //float delta = Gdx.graphics.getDeltaTime();
-//                    setX(getX()+(dx/length));
-//                    setY(getY()+(dy/length));
-//
-//                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-//                    Gdx.app.log("Moving Position: ", "PrevPos X : " +  posPrev.fX + ", Y: " + posPrev.fY + ", length: " + length);
-//                    Gdx.app.log("Moving Position: ", "CurrPos X : " +  getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
-//                    Gdx.app.log("Moving Position: ", "MovingTime : " +  mMovingTime + ", TimePassed: " + mTimePassed);
-//
-//                    if ((mMovingTime -= mTimePassed) <= 0) {
-//                        mMovingTime = 1.0f;
-//                        mlstMovingPosition.remove(0);
-//                    }
-//                    else {
-//                        Gdx.app.log("mMovingTime ", "time: " + mMovingTime);
-//                    }
-//                }
-//                else {
-//                    mIsPlayingAnimation = false;
-//                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-//                }
-//            }
         }
 
-        for(Bullet bullet: mlstBullet) {
+        for(Bullet bullet: lstBullet) {
             bullet.draw(spritebatch);
         }
+
+        hpBar.setPosition(getX()+15,getY()+115);
+        hpBarBorder.setPosition(getX()-240,getY()+19);
+        hpBar.setScale(0.23f*(health/100.f),0.13f);
+
+        hpBar.draw(spritebatch);
+        hpBarBorder.draw(spritebatch);
     }
 
     public Boolean updateBullets(ArrayList<Zombie> lstZombie) {
-        for(Bullet bullet: mlstBullet) {
+        for(Bullet bullet: lstBullet) {
             bullet.update(Gdx.graphics.getDeltaTime());
 
             // check to collide any zombies
@@ -192,9 +180,10 @@ public class Player extends Sprite {
                     zombie.hit(weaponPower);
                     if (zombie.getHealth()<=0) {
                         lstZombie.remove(zombie);
+                        lstBullet.remove(bullet);
                         return true;
                     }
-                    mlstBullet.remove(bullet);
+                    lstBullet.remove(bullet);
                     return false;
                 }
             }
@@ -202,29 +191,29 @@ public class Player extends Sprite {
             // check bounds and remove it in lstBullet
             float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) World.width*15, topRightY = (float) World.height*15;
             if (bullet.getHitBox().getX() <= bottomLeftX || bullet.getHitBox().getX() >= topRightX) {
-                mlstBullet.remove(bullet);
+                lstBullet.remove(bullet);
                 return false;
             }
             else if (bullet.getHitBox().getY() <= bottomLeftY || bullet.getHitBox().getY() >= topRightY) {
-                mlstBullet.remove(bullet);
+                lstBullet.remove(bullet);
                 return false;
             }
         }
         return false;
     }
 
-    public float getShootingAngle() { return mSaveShootingAngle; }
+    public float getShootingAngle() { return saveShootingAngle; }
 
     public void changeDirection(float angle) {
 
-        this.mSaveShootingAngle = angle;
+        this.saveShootingAngle = angle;
 
         if (angle < 0) {
-            mIsPlayingAnimation = false;
+            bIsPlayingAnimation = false;
             return;
         }
 
-        mIsPlayingAnimation = true;
+        bIsPlayingAnimation = true;
 
         // for example using texture from files
         if (angle >= 25 && angle <= 70) {  // right-down
