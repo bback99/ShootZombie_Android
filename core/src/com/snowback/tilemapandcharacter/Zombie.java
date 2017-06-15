@@ -18,7 +18,8 @@ public class Zombie extends Sprite {
     private Texture textureZombie;
     private Texture textureHpBar;
     private Rectangle hitBox;
-    private Integer health;
+    private Integer mHealth;
+    private int mIndex;
 
 
     private Animation animation;
@@ -37,11 +38,12 @@ public class Zombie extends Sprite {
     private State previousState;
 
 
-    public Zombie(float x, float y) {
+    public Zombie(int index, float x, float y, int health) {
+        mIndex = index;
         textureZombie = AssetManager.getInstance().getZombie();
         textureHpBar = AssetManager.getInstance().getHealthBar();
         hitBox = new Rectangle(x, y, 50, 100);
-        health = 5;
+        mHealth = health;
 
         animation = AssetManager.getInstance().getAniZombieRight();
         currentState = State.MOVE_RIGHT;
@@ -62,7 +64,7 @@ public class Zombie extends Sprite {
         previousState = currentState;
 
         //Draw Hp bar;
-        spritebatch.draw(textureHpBar,hitBox.getX()-18,hitBox.getY()+100,80*(health/5.f),10);
+        spritebatch.draw(textureHpBar,hitBox.getX()-18,hitBox.getY()+100,80*(mHealth/5.f),10);
 
     }
 
@@ -154,15 +156,15 @@ public class Zombie extends Sprite {
     }
 
     public void hit(int damage){
-        health-=damage;
+        mHealth-=damage;
     }
 
     public Integer getHealth(){
-        return health;
+        return mHealth;
     }
     public Rectangle getHitBox() {
         return hitBox;
     }
-
+    public int getMonsterIndex() { return mIndex; }
 
 }

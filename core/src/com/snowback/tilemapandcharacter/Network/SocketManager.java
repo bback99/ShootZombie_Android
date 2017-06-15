@@ -161,7 +161,8 @@ public class SocketManager {
                 if(cb != null)
                     cb.responseData(jsonObject.getJSONObject("body"));
                 else {
-                    emit(jsonObject.getJSONObject("body").getString("msg"), jsonObject);
+                    if (!jsonObject.isNull("body") && !jsonObject.isNull("msg"))
+                        emit(jsonObject.getJSONObject("body").getString("msg"), jsonObject);
                 }
                 mMapCbs.remove(id);
             }

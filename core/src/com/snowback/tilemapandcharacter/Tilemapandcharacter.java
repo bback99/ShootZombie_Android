@@ -165,28 +165,24 @@ public class Tilemapandcharacter extends Game {
         }
 
         public void socketHandler(String type, Object... args) {
-            if (type == "notify spawn zombie") {
-                JSONObject data = (JSONObject) args[0];
-                try {
-                    JSONObject position = data.getJSONObject("zombiePosition");
-                    float fX = position.getInt("X");
-                    float fY = position.getInt("Y");
-                    Gdx.app.log("SOCKET.IO", "position: " + fX + ", " + fY);
-                    this.mPlay.addZombie(fX, fY);
-                } catch (JSONException e) {
-                    return;
-                }
-            }
-            else if (type == "answer login") {      // answer to add userlist
+            if (type == "answer login") {      // answer to add userlist
                 JSONObject data = (JSONObject) args[0];
                 try {
                     JSONArray users = data.getJSONArray("users");
                     if(users != null && users.length() > 0) {
                         for(int i=0; i<users.length(); i++) {
                             JSONObject objectInArray = users.getJSONObject(i);
-                            Gdx.app.log("SOCKET.IO", "username: " + objectInArray.getString("user_name"));
+                            //Gdx.app.log("SOCKET.IO", "username: " + objectInArray.getString("user_name"));
                             Player newPlayer = new Player(false, objectInArray.getString("user_name"), objectInArray.getDouble("posX"), objectInArray.getDouble("posY"));
                             this.mPlay.addPlayers(newPlayer);
+                        }
+                    }
+
+                    JSONArray monsters = data.getJSONArray("monsters");
+                    if (monsters != null && monsters.length() > 0) {
+                        for(int i=0; i<monsters.length(); i++) {
+                            JSONObject objectInArray = monsters.getJSONObject(i);
+                            mPlay.addZombie(objectInArray.getInt("mobIndex"), (float)objectInArray.getDouble("posX"), (float)objectInArray.getDouble("posY"), objectInArray.getInt("health"));
                         }
                     }
                 } catch (JSONException e) {

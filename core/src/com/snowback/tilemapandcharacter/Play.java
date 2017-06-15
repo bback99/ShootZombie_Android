@@ -1,8 +1,11 @@
 package com.snowback.tilemapandcharacter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.assets.loaders.resolvers.InternalFileHandleResolver;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.snowback.tilemapandcharacter.Network.DataCallback;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -17,20 +20,22 @@ public class Play {
     private ArrayList<Player> mlstPlayers;       // for other players
     private ArrayList<Zombie> mlstZombie;
     private Random random;
+    private Tilemapandcharacter.GameScreen mMain;
 
     public Play(Tilemapandcharacter.GameScreen main) {
+        mMain = main;
         mPlayer = new Player(true, main.UserName, 0, 0);       // for main player
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
 
-        for (int i=0; i<3; i++) {
-            addZombie(Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE));
-        }
+//        for (int i=0; i<3; i++) {
+//            addZombie(i, Math.abs(random.nextInt() % World.width * World.TILESIZE), Math.abs(random.nextInt() % World.height * World.TILESIZE), 5);
+//        }
     }
 
-    public void addZombie(float fX, float fY) {
-        mlstZombie.add(new Zombie(fX, fY));
+    public void addZombie(int index, float fX, float fY, int health) {
+        mlstZombie.add(new Zombie(index, fX, fY, health));
     }
 
     public void addPlayers(Player newPlayer) {
@@ -106,8 +111,25 @@ public class Play {
     }
 
     public void updateBullets() {
-        if (mPlayer.updateBullets(mlstZombie)) {
-            //addZombie();
+        int monsterIndex = mPlayer.updateBullets(mlstZombie);
+        if (monsterIndex >= 0) {
+            mMain.getMessageHandler().requestKilledMonster(monsterIndex, new DataCallback() {
+                @Override
+                public void responseData(JSONObject message) {
+                    JSONArray monsters = null;
+                    try {
+                        monsters = message.getJSONArray("monsters");
+                        if (monsters != null && monsters.length() > 0) {
+                            for(int i=0; i<monsters.length(); i++) {
+                                JSONObject objectInArray = monsters.getJSONObject(i);
+                                addZombie(objectInArray.getInt("mobIndex"), (float)objectInArray.getDouble("posX"), (float)objectInArray.getDouble("posY"), objectInArray.getInt("health"));
+                            }
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
         }
     }
 

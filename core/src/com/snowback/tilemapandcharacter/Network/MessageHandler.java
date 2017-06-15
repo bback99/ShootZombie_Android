@@ -25,8 +25,10 @@ public class MessageHandler extends SocketManager{
         onNotifyLogin();
         onNotifyPlayerLocation();
         onUserLeaveFromRoom();
+        onNotifyNewMonster();
     }
 
+    // receive messages from server
     public void onNotifyLogin() {
         List<DataListener> lstListener = new ArrayList<DataListener>();
         lstListener.add(new DataListener() {
@@ -60,6 +62,19 @@ public class MessageHandler extends SocketManager{
         super.mMapListeners.put("onNotifyPlayerLocation", lstListener);
     }
 
+    public void onNotifyNewMonster() {
+        List<DataListener> lstListener = new ArrayList<DataListener>();
+        lstListener.add(new DataListener() {
+            @Override
+            public void receiveData(DataEvent event) {
+                //MessageHandler.super.mMain.socketHandler("notify moving", event.getMessage());
+            }
+        });
+        super.mMapListeners.put("onNotifyNewMonster", lstListener);
+    }
+
+
+    // request messages to server
     public void requestAttempLogin(String userName, float X, float Y, DataCallback func) {
 
         JSONObject requestLogin = new JSONObject();
@@ -84,5 +99,15 @@ public class MessageHandler extends SocketManager{
             e.printStackTrace();
         }
         notifyMessage("room.roomHandler.notifyPlayerLocation", ntfUserPosition);
+    }
+
+    public void requestKilledMonster(int monsterIndex, DataCallback func) {
+        JSONObject requestKilledMonster = new JSONObject();
+        try {
+            requestKilledMonster.put("idKilledMonster", monsterIndex);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        request("room.roomHandler.requestKilledMonster", requestKilledMonster, func);
     }
 }

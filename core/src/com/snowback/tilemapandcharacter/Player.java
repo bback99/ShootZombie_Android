@@ -9,6 +9,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.snowback.tilemapandcharacter.Network.MessageHandler;
 
 import java.util.ArrayList;
 
@@ -170,7 +171,7 @@ public class Player extends Sprite {
         hpBarBorder.draw(spritebatch);
     }
 
-    public Boolean updateBullets(ArrayList<Zombie> lstZombie) {
+    public int updateBullets(ArrayList<Zombie> lstZombie) {
         for(Bullet bullet: lstBullet) {
             bullet.update(Gdx.graphics.getDeltaTime());
 
@@ -181,10 +182,12 @@ public class Player extends Sprite {
                     if (zombie.getHealth()<=0) {
                         lstZombie.remove(zombie);
                         lstBullet.remove(bullet);
-                        return true;
+
+                        // send message to server, to kill zombies with index
+                        return zombie.getMonsterIndex();
                     }
                     lstBullet.remove(bullet);
-                    return false;
+                    return -1;
                 }
             }
 
@@ -192,14 +195,14 @@ public class Player extends Sprite {
             float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) World.width*15, topRightY = (float) World.height*15;
             if (bullet.getHitBox().getX() <= bottomLeftX || bullet.getHitBox().getX() >= topRightX) {
                 lstBullet.remove(bullet);
-                return false;
+                return -1;
             }
             else if (bullet.getHitBox().getY() <= bottomLeftY || bullet.getHitBox().getY() >= topRightY) {
                 lstBullet.remove(bullet);
-                return false;
+                return -1;
             }
         }
-        return false;
+        return -1;
     }
 
     public float getShootingAngle() { return saveShootingAngle; }
