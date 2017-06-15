@@ -1,11 +1,316 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eea7547-7b46-4ea9-b9cc-9be6bff922eb" name="Default" comment="" />
+    <list default="true" id="5eea7547-7b46-4ea9-b9cc-9be6bff922eb" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/core_core_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/classes/androidTest/debug/com/snowback/tilemapandcharacter/test/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/ISocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager$CallbackFunc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/SocketManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/zip-cache/+TlnYVneM1MRwu7zSQrNNKS8uC0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/zip-cache/WHErA8PFA_hJ9XvPdIxrkXrYgKM=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/zip-cache/+TlnYVneM1MRwu7zSQrNNKS8uC0=" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16abe05479307a7d6a6a9bd56120c0e3e0f2e9ad/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_240aee00116c354659e8a0d611bf80d4d8d73979/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_28cc0086749e802380c9f59bfff941f6ec4f85f2/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3595a39fe535c36309b89236e151993c56cbfaa7/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6032b858bc9368f663181ebbcc238d560a6e1e0f/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bebee038958916fe31e9404f5a2d8950c077683d/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d2dbef20c70876111f25b2c05282abe66fcc5cd3/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e0a9d5a0a5edf35cb63da3aaa3b3d9d1d80a98d1/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e776e6c1029d969524c4be46c88361062ce21251/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fba57ead6ca0130686f238971c32f5ef32b3c21a/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_d13e142dc4502c53bc418b49e50717fd5f0514c8/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/engine.io-client-0.8.3_ef6859c07121a2d005fa35db90e4e75a5ed0f3e2/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-1.9.6_af74aba815e20dc83a0a88d3c873b14c73b59dfc/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-backend-android-1.9.6_0508151660f378489e4bd8f4a75ec3f11011818e/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/gdx-box2d-1.9.6_2bf1cf62b0f66fcca4666f9ada6176a01b0b30bf/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.5.0_eff914a2cf2a399bab90808237ea11f387181dc9/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.11.0_d319bc23c7802164f02808ecabf58caabb60a269/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/socket.io-client-0.8.3_f762314252b7d915a1fe6731fce04a08372b4979/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_4a7760d3f5cc8e59a30de3e443acf530a9cbd329/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_779c161764563b7359ec76c9a0177336b0b99c7d/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_15592e125c8cbe803e2155a0d84f8bde2f96706d/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/2/pomelo-android-client_b2683a589d92e029aa728bd6362a3fa6f61ac066/classes.dex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/AssetManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Bullet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/ISocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/JoyStick$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/JoyStick.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Message$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Message$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Play.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Player$MovingPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager$CallbackFunc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/SocketManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Tilemapandcharacter$Listener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/UI/HUD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/World$Tile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/World$TileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/World.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/extractJars/debug/folders/1/4/core-1.0.jar-1450959647/com/snowback/tilemapandcharacter/Zombie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/ISocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager$CallbackFunc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/SocketManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/compat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/fragment/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_0/android/support/mediacompat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/coreutils/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v4/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_2/android/support/v7/appcompat/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_3/android/support/graphics/drawable/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/android/support/coreui/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_7/com/snowback/tilemapandcharacter/UI/HUD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_8/android/support/graphics/drawable/animated/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/android/support/constraint/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/android/support/constraint/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/android/support/constraint/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/android/support/constraint/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/buildId.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/AndroidLauncher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/AssetManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Bullet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/ISocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/JoyStick$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/JoyStick.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/MainActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/MainActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/MainActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Message$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Message$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Play.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Player$MovingPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$anim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$bool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$dimen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$integer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$mipmap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$style.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R$styleable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/R.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager$CallbackFunc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/SocketManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Tilemapandcharacter$Listener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/World$Tile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/World$TileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/World.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRunSlicer/debug/folders/1/5/slice_9/com/snowback/tilemapandcharacter/Zombie.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/AssetManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Bullet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/ISocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/JoyStick$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/JoyStick.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Message$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Message$Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Message.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Play.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Player$MovingPosition.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Player.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$6.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$7.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager$CallbackFunc.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/SocketManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Tilemapandcharacter$Listener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/UI/HUD.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/World$Tile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/World$TileType.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/World.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/android/build/tmp/expandedArchives/core-1.0.jar_b8mc103sbp20ccos30040yxfe/com/snowback/tilemapandcharacter/Zombie.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_android_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/maps/menu.png" afterPath="$PROJECT_DIR$/android/assets/maps/menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/resources/IMG_9400.PNG" afterPath="$PROJECT_DIR$/android/assets/resources/IMG_9400.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/assets/resources/zombie.png" afterPath="$PROJECT_DIR$/android/assets/resources/zombie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/maps/menu.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/maps/menu.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/maps/tileset.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/maps/tileset.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/01.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/01.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/02.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/02.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/03.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/03.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/04.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/05.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/05.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/06.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/06.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/07.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/07.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/08.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/08.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/09.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/09.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/10.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/11.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/12.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/13.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/14.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/15.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/16.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/17.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/18.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/19.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/20.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/21.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/22.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/23.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/24.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/25.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/25.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/right/walkingRight.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/right/walkingRight.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/IMG_9400.PNG" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/IMG_9400.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/bullet.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/bullet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/touchBackground.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/touchBackground.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/touchKnob.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/touchKnob.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/zombie.png" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/resources/zombie.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/AssetManager.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/AssetManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/JoyStick$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/JoyStick$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/JoyStick.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/JoyStick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Play.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Play.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Player.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/UI/HUD.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/UI/HUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World$Tile.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World$Tile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World$TileType.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World$TileType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/World.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Zombie.class" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental-verifier/debug/com/snowback/tilemapandcharacter/Zombie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/jniLibs/debug/pomelo-android-client.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/jniLibs/debug/pomelo-android-client.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/dep/dependencies.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/dep/dependencies.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_0.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_0.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_1.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_1.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_2.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_2.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_3.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_3.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_4.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_5.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_5.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_6.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_6.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_7.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_7.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_8.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_8.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" afterPath="$PROJECT_DIR$/android/build/intermediates/split-apk/debug/slices/slice_9.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/AndroidLauncher.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/AndroidLauncher.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/AssetManager.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/AssetManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/JoyStick$1.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/JoyStick$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/JoyStick.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/JoyStick.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/MainActivity.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/MainActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Play.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Play.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Player.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Player.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Tilemapandcharacter$GameScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Tilemapandcharacter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/UI/HUD.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/UI/HUD.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World$Tile.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World$Tile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World$TileType.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World$TileType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/World.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Zombie.class" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/snowback/tilemapandcharacter/Zombie.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" afterPath="$PROJECT_DIR$/android/build/intermediates/transforms/mergeJavaRes/debug/jars/2/1f/main.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" afterPath="$PROJECT_DIR$/android/build/outputs/apk/android-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/android.iml" afterPath="$PROJECT_DIR$/android/android.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/right/walkingRight.atlas" afterPath="$PROJECT_DIR$/android/build/intermediates/assets/debug/players/character10/right/walkingRight.atlas" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/mergeDebugShaders/merger.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/incremental/packageInstantRunResourcesDebug/file-input-save-data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_dependencies/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_0/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_1/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_2/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_3/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_4/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_5/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_6/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_7/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_8/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/android/build/intermediates/instant-run-support/debug/package_slice_9/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/android/build/intermediates/restart-dex/debug/build-info.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java" afterPath="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java" />
+    </list>
     <ignored path="ShootZombie_Android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,6 +338,115 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="ShootZombie_Android" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1560">
+              <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tilemapandcharacter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1380">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Zombie.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataCallback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/DataCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Play.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidGraphics.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.6/d9bc220c3c316af8ed6ddaf5dfb287d0c9389605/gdx-backend-android-1.9.6-sources.jar!/com/badlogic/gdx/backends/android/AndroidGraphics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5895">
+              <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-25/android.jar!/java/util/ArrayList.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1155">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArrayList.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8025">
+              <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssetManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/AssetManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2565">
+              <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -1782,7 +2196,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="5982945263000" />
+        <entry key="$PROJECT_DIR$" value="5989341357000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -1797,17 +2211,23 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.2/gradle-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.2/ae174b2aa348ae742cdc63496b66bcbc8f15d5e0/gradle-bintray-plugin-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/c284e22e7c691774d2240e419ac2a744e80d7e84/android-maven-gradle-plugin-1.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/56f44bee48445bcb6b1f1e0f04576de3fee13426/android-maven-gradle-plugin-1.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.2/gradle-core-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/323092cd786480311c1cf693770f9e6fc20a8bef/http-builder-0.7.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.2/builder-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.2/lint-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.2/gradle-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.2/compilerCommon-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
@@ -1823,30 +2243,43 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/61e35204e5a8fdb864152f84e2e3b33ab56f50ab/nekohtml-1.9.16.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/6b72432ea1c5296783007365bb7c9a6b39dfb730/xml-resolver-1.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/3d0f97750b3a03e0971831566067754ba4bfd68c/xml-resolver-1.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.2/builder-model-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.2/builder-test-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.2/sdklib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.2/sdk-common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.2/common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.2/manifest-merger-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.2/ddmlib-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.13.0/jack-api-0.13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.10.0/jill-api-0.10.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.2/protos-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.2/shared-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.2/tracker-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.2/lint-checks-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.2/baseLibrary-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.2/annotations-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-debug-all/5.0.1/asm-debug-all-5.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/2818502bbb50bbcbd3f57e92a2bfe4d496f37688/commons-beanutils-1.8.0-sources.jar" />
@@ -1859,14 +2292,18 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/298992280d62b944afd0ae9bfe3329f5487dd434/ezmorph-1.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/7bc7e49ddfe4fb5f193ed37ecc96c12292c8ceb6/xercesImpl-2.9.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.2/layoutlib-api-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.2/dvlib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.2/repository-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.2/lint-api-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.4/asm-analysis-5.0.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/d89105ccbe3fd823865330fd964233baf2b53e88/xml-apis-1.3.04-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/90b215f48fe42776c8c7f6e3509ec54e84fd65ef/xml-apis-1.3.04.jar" />
@@ -1889,17 +2326,23 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.2/gradle-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.2/ae174b2aa348ae742cdc63496b66bcbc8f15d5e0/gradle-bintray-plugin-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/c284e22e7c691774d2240e419ac2a744e80d7e84/android-maven-gradle-plugin-1.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/56f44bee48445bcb6b1f1e0f04576de3fee13426/android-maven-gradle-plugin-1.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.2/gradle-core-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/323092cd786480311c1cf693770f9e6fc20a8bef/http-builder-0.7.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.2/builder-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.2/lint-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.2/gradle-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.2/compilerCommon-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
@@ -1915,30 +2358,43 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/61e35204e5a8fdb864152f84e2e3b33ab56f50ab/nekohtml-1.9.16.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/6b72432ea1c5296783007365bb7c9a6b39dfb730/xml-resolver-1.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/3d0f97750b3a03e0971831566067754ba4bfd68c/xml-resolver-1.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.2/builder-model-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.2/builder-test-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.2/sdklib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.2/sdk-common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.2/common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.2/manifest-merger-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.2/ddmlib-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.13.0/jack-api-0.13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.10.0/jill-api-0.10.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.2/protos-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.2/shared-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.2/tracker-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.2/lint-checks-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.2/baseLibrary-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.2/annotations-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-debug-all/5.0.1/asm-debug-all-5.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/2818502bbb50bbcbd3f57e92a2bfe4d496f37688/commons-beanutils-1.8.0-sources.jar" />
@@ -1951,14 +2407,18 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/298992280d62b944afd0ae9bfe3329f5487dd434/ezmorph-1.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/7bc7e49ddfe4fb5f193ed37ecc96c12292c8ceb6/xercesImpl-2.9.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.2/layoutlib-api-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.2/dvlib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.2/repository-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.2/lint-api-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.4/asm-analysis-5.0.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/d89105ccbe3fd823865330fd964233baf2b53e88/xml-apis-1.3.04-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/90b215f48fe42776c8c7f6e3509ec54e84fd65ef/xml-apis-1.3.04.jar" />
@@ -1981,17 +2441,23 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.2/gradle-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.3/gradle-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jfrog.bintray.gradle/gradle-bintray-plugin/1.2/ae174b2aa348ae742cdc63496b66bcbc8f15d5e0/gradle-bintray-plugin-1.2.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/c284e22e7c691774d2240e419ac2a744e80d7e84/android-maven-gradle-plugin-1.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.dcendents/android-maven-gradle-plugin/1.3/56f44bee48445bcb6b1f1e0f04576de3fee13426/android-maven-gradle-plugin-1.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.2/gradle-core-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.3/gradle-core-2.3.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.groovy.modules.http-builder/http-builder/0.7.2/323092cd786480311c1cf693770f9e6fc20a8bef/http-builder-0.7.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.2/builder-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.2/lint-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.3/builder-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.3/lint-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.2/gradle-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.2/compilerCommon-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-api/2.3.3/gradle-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/compilerCommon/2.3.3/compilerCommon-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4-sources.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm/5.0.4/asm-5.0.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-commons/5.0.4/asm-commons-5.0.4.jar" />
@@ -2007,30 +2473,43 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.nekohtml/nekohtml/1.9.16/61e35204e5a8fdb864152f84e2e3b33ab56f50ab/nekohtml-1.9.16.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/6b72432ea1c5296783007365bb7c9a6b39dfb730/xml-resolver-1.2-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-resolver/xml-resolver/1.2/3d0f97750b3a03e0971831566067754ba4bfd68c/xml-resolver-1.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.2/builder-model-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.2/builder-test-api-2.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.2/sdklib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.2/sdk-common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.2/common-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.2/manifest-merger-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.2/ddmlib-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.3/builder-model-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.3/builder-test-api-2.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.3/sdklib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdk-common/25.3.3/sdk-common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/common/25.3.3/common-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/manifest-merger/25.3.3/manifest-merger-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/ddms/ddmlib/25.3.3/ddmlib-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jack/jack-api/0.13.0/jack-api-0.13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/jill/jill-api/0.10.0/jill-api-0.10.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.2/protos-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.2/shared-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.2/tracker-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/protos/25.3.3/protos-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/shared/25.3.3/shared-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/analytics-library/tracker/25.3.3/tracker-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/squareup/javawriter/2.5.0/javawriter-2.5.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-tree/5.0.4/asm-tree-5.0.4.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.2/lint-checks-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-checks/25.3.3/lint-checks-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.2/baseLibrary-2.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.3/baseLibrary-2.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.2/annotations-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.3/annotations-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-debug-all/5.0.1/asm-debug-all-5.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/2818502bbb50bbcbd3f57e92a2bfe4d496f37688/commons-beanutils-1.8.0-sources.jar" />
@@ -2043,14 +2522,18 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/298992280d62b944afd0ae9bfe3329f5487dd434/ezmorph-1.0.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.ezmorph/ezmorph/1.0.6/1e55d2a0253ea37745d33062852fd2c90027432/ezmorph-1.0.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xerces/xercesImpl/2.9.1/7bc7e49ddfe4fb5f193ed37ecc96c12292c8ceb6/xercesImpl-2.9.1.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.2/layoutlib-api-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.2/dvlib-25.3.2.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.2/repository-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/layoutlib/layoutlib-api/25.3.3/layoutlib-api-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/dvlib/25.3.3/dvlib-25.3.3.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/repository/25.3.3/repository-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/commons/commons-compress/1.8.1/commons-compress-1.8.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/apache/httpcomponents/httpmime/4.1/httpmime-4.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/kxml/kxml2/2.3.0/kxml2-2.3.0.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.2/lint-api-25.3.2.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3-sources.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint-api/25.3.3/lint-api-25.3.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/ow2/asm/asm-analysis/5.0.4/asm-analysis-5.0.4.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/d89105ccbe3fd823865330fd964233baf2b53e88/xml-apis-1.3.04-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/xml-apis/xml-apis/1.3.04/90b215f48fe42776c8c7f6e3509ec54e84fd65ef/xml-apis-1.3.04.jar" />
@@ -2221,6 +2704,18 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java" />
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java" />
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java" />
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java" />
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java" />
+        <option value="$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1920" />
@@ -2251,6 +2746,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2265,21 +2763,53 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tilemapandcharacter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ShootZombie_Android" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.NonAndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tilemapandcharacter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Network" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="device.picker.selection" value="Nexus_6_API_23" />
+    <property name="SearchEverywhereHistoryKey" value="notify moving&#9;null&#9;null" />
+    <property name="DEBUGGABLE_DEVICE" value="Nexus_6_API_23 [emulator-5554]" />
+    <property name="DEBUGGABLE_PROCESS" value="com.snowback.tilemapandcharacter" />
+    <property name="SHOW_ALL_PROCESSES" value="false" />
+    <property name="DEBUGGER_ID" value="Auto" />
   </component>
   <component name="RunManager" selected="Android App.android">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -2355,12 +2885,97 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
+      </Profilers>
+      <method />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -2392,6 +3007,34 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="OUTPUT_DIRECTORY" />
       <option name="ANNOTATION_TYPE" />
       <option name="ENV_VARIABLES" />
@@ -2492,35 +3135,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1173" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923368" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.256386" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22894986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23178808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16240682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14962727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39924315" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30558184" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2535,7 +3178,324 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="40" column="60" selection-start-line="40" selection-start-column="60" selection-end-line="40" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/DataCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.6/d9bc220c3c316af8ed6ddaf5dfb287d0c9389605/gdx-backend-android-1.9.6-sources.jar!/com/badlogic/gdx/backends/android/AndroidGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5895">
+          <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-25/android.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8025">
+          <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/AssetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="91" column="36" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="180" column="68" selection-start-line="180" selection-start-column="68" selection-end-line="180" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/JoyStick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="115" column="48" selection-start-line="115" selection-start-column="35" selection-end-line="115" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/AssetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2235">
+          <caret line="163" column="74" selection-start-line="163" selection-start-column="74" selection-end-line="163" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="143" column="52" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Bullet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#452#453#0" expanded="true" />
+            <element signature="e#481#482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/JoyStick.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" column="60" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/SocketManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="163" column="74" selection-start-line="163" selection-start-column="74" selection-end-line="163" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="184" column="0" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Library/Android/sdk/platforms/android-25/android.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8025">
+          <caret line="572" column="0" selection-start-line="572" selection-start-column="0" selection-end-line="572" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.badlogicgames.gdx/gdx-backend-android/1.9.6/d9bc220c3c316af8ed6ddaf5dfb287d0c9389605/gdx-backend-android-1.9.6-sources.jar!/com/badlogic/gdx/backends/android/AndroidGraphics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5895">
+          <caret line="458" column="0" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Tilemapandcharacter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Network/DataCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/AssetManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/com/snowback/tilemapandcharacter/Zombie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
