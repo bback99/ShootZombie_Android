@@ -90,7 +90,7 @@ public class Zombie extends Sprite {
 
 
         if(canMove) {
-            chasePlayer(player);
+            //chasePlayer(player);
         }
 
         OverlapPlayer(player,delta);
