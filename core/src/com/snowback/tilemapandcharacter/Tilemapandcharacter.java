@@ -96,9 +96,7 @@ public class Tilemapandcharacter extends Game {
                 Gdx.gl.glClearColor(1, 1, 1, 1);
                 Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT | GL20.GL_DEPTH_BUFFER_BIT);
 
-                this.camera.position.x = mPlay.getPlayer().getX();
-                this.camera.position.y = mPlay.getPlayer().getY();
-                camera.update();
+                updateCamera();
 
                 batch.setProjectionMatrix(camera.combined);
 
@@ -122,6 +120,18 @@ public class Tilemapandcharacter extends Game {
                 Gdx.app.log("Loading Resources", Float.toString(AssetManager.getInstance().getAssetManager().getProgress()));
                 // later on display loading bar here
             }
+        }
+
+        private void updateCamera() {
+
+            if(mPlay.getPlayer().getX()+this.camera.viewportWidth/2<world.width*16&&mPlay.getPlayer().getX()-this.camera.viewportWidth/2>0){
+                this.camera.position.x = mPlay.getPlayer().getX();
+            }
+            if(mPlay.getPlayer().getY()+this.camera.viewportHeight/2<world.height*16&&mPlay.getPlayer().getY()-this.camera.viewportHeight/2>0){
+                this.camera.position.y = mPlay.getPlayer().getY();
+            }
+
+            camera.update();
         }
 
         public void generalUpdate(){

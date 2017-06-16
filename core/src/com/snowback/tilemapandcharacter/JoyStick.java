@@ -170,12 +170,12 @@ public class JoyStick {
                 player.setX(positionX);
         }
 
-        if (player.getY() <= bottomLeftY || player.getY() >= topRightY) {
+        if (player.getY() <= bottomLeftY || player.getY()+90 >= topRightY) {
             player.setY(player.getY());
         }
         else {
             float positionY = player.getY() + tpDirection.getKnobPercentY()*blockSpeed;
-            if (positionY >= 0 && positionY <= topRightY)
+            if (positionY >= 0 && positionY +90 <= topRightY)
                 player.setY(positionY);
         }
 

@@ -16,7 +16,7 @@ public class World {
     public static final int DRAW_TILESIZE = 16;
 
     public static int width = 118; //amount of blocks per row
-    public static int height = 55; //amount of blocks per column
+    public static int height = 45; //amount of blocks per column
 
 
     //(col, row) => (row * width + col)
