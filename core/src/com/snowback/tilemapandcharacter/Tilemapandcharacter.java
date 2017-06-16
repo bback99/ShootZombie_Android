@@ -199,10 +199,12 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
-            if (type == "notify add monster") {
+            if (type == "notify monsters") {
                 JSONObject data = (JSONObject) args[0];
                 try {
                     JSONObject body = data.getJSONObject("body");
+                    mPlay.removeMonster(body.getInt("killedMonster"));
+
                     JSONArray monsters = body.getJSONArray("monsters");
                     if (monsters != null && monsters.length() > 0) {
                         for(int i=0; i<monsters.length(); i++) {

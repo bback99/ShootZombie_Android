@@ -34,6 +34,15 @@ public class Play {
 //        }
     }
 
+    public void removeMonster(int index) {
+        for(Zombie zombie: mlstZombie) {
+            if (index == zombie.getMonsterIndex()) {
+                mlstZombie.remove(zombie);
+                break;
+            }
+        }
+    }
+
     public void addZombie(int index, float fX, float fY, int health) {
         mlstZombie.add(new Zombie(index, fX, fY, health));
     }

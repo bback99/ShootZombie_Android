@@ -26,7 +26,7 @@ public class MessageHandler extends SocketManager{
         onNotifyLogin();
         onNotifyPlayerLocation();
         onUserLeaveFromRoom();
-        onNotifyNewMonster();
+        onNotifyMonsters();
     }
 
     // receive messages from server
@@ -63,15 +63,15 @@ public class MessageHandler extends SocketManager{
         super.mMapListeners.put("onNotifyPlayerLocation", lstListener);
     }
 
-    public void onNotifyNewMonster() {
+    public void onNotifyMonsters() {
         List<DataListener> lstListener = new ArrayList<DataListener>();
         lstListener.add(new DataListener() {
             @Override
             public void receiveData(DataEvent event) {
-                MessageHandler.super.mMain.socketHandler("notify add monster", event.getMessage());
+                MessageHandler.super.mMain.socketHandler("notify monsters", event.getMessage());
             }
         });
-        super.mMapListeners.put("onNotifyNewMonster", lstListener);
+        super.mMapListeners.put("onNotifyMonsters", lstListener);
     }
 
 
