@@ -116,18 +116,18 @@ public class Play {
             mMain.getMessageHandler().requestKilledMonster(monsterIndex, new DataCallback() {
                 @Override
                 public void responseData(JSONObject message) {
-                    JSONArray monsters = null;
-                    try {
-                        monsters = message.getJSONArray("monsters");
-                        if (monsters != null && monsters.length() > 0) {
-                            for(int i=0; i<monsters.length(); i++) {
-                                JSONObject objectInArray = monsters.getJSONObject(i);
-                                addZombie(objectInArray.getInt("mobIndex"), (float)objectInArray.getDouble("posX"), (float)objectInArray.getDouble("posY"), objectInArray.getInt("health"));
-                            }
-                        }
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+//                    JSONAr ray monsters = null;
+//                    try {
+//                        monsters = message.getJSONArray("monsters");
+//                        if (monsters != null && monsters.length() > 0) {
+//                            for(int i=0; i<monsters.length(); i++) {
+//                                JSONObject objectInArray = monsters.getJSONObject(i);
+//                                addZombie(objectInArray.getInt("mobIndex"), (float)objectInArray.getDouble("posX"), (float)objectInArray.getDouble("posY"), objectInArray.getInt("health"));
+//                            }
+//                        }
+//                    } catch (JSONException e) {
+//                        e.printStackTrace();
+//                    }
                 }
             });
         }

@@ -199,6 +199,21 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
+            if (type == "notify add monster") {
+                JSONObject data = (JSONObject) args[0];
+                try {
+                    JSONObject body = data.getJSONObject("body");
+                    JSONArray monsters = body.getJSONArray("monsters");
+                    if (monsters != null && monsters.length() > 0) {
+                        for(int i=0; i<monsters.length(); i++) {
+                            JSONObject objectInArray = monsters.getJSONObject(i);
+                            mPlay.addZombie(objectInArray.getInt("mobIndex"), (float)objectInArray.getDouble("posX"), (float)objectInArray.getDouble("posY"), objectInArray.getInt("health"));
+                        }
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
             else if (type == "notify login") {      // notify to add new_user
                 JSONObject data = (JSONObject) args[0];
                 try {

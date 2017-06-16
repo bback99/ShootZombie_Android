@@ -1,6 +1,7 @@
 package com.snowback.tilemapandcharacter.Network;
 import com.snowback.tilemapandcharacter.Tilemapandcharacter;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -67,7 +68,7 @@ public class MessageHandler extends SocketManager{
         lstListener.add(new DataListener() {
             @Override
             public void receiveData(DataEvent event) {
-                //MessageHandler.super.mMain.socketHandler("notify moving", event.getMessage());
+                MessageHandler.super.mMain.socketHandler("notify add monster", event.getMessage());
             }
         });
         super.mMapListeners.put("onNotifyNewMonster", lstListener);
