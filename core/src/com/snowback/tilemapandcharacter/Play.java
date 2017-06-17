@@ -76,30 +76,45 @@ public class Play {
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {
         // in order to remove safely, need to use iterator
-        Iterator<Zombie> ite = mlstZombie.iterator();
-        while(ite.hasNext()) {
-            Zombie zombie = ite.next();
-            if (!zombie.isAlive()) {
-                ite.remove();
+//        Iterator<Zombie> ite = mlstZombie.iterator();
+//        while(ite.hasNext()) {
+//            Zombie zombie = ite.next();
+//            if (!zombie.isAlive()) {
+//                ite.remove();
+//            }
+//            else {
+//                zombie.draw(batch);
+//            }
+//        }
+        for(int i=0; i<mlstZombie.size(); i++) {
+            if (!mlstZombie.get(i).isAlive()) {
+                mlstZombie.remove(i);
             }
-            else {
-                zombie.draw(batch);
-            }
+            else
+                mlstZombie.get(i).draw(batch);
         }
 
         mPlayer.draw(batch);
         //mCopyPlayer.draw(batch);
 
-        // in order to remove safely, need to use iterator
-        Iterator<Player> ite2 = mlstPlayers.iterator();
-        while(ite2.hasNext()) {
-            Player player = ite2.next();
-            if (!player.isAlive()) {
-                ite2.remove();
+//        // in order to remove safely, need to use iterator
+//        Iterator<Player> ite2 = mlstPlayers.iterator();
+//        while(ite2.hasNext()) {
+//            Player player = ite2.next();
+//            if (!player.isAlive()) {
+//                ite2.remove();
+//            }
+//            else {
+//                player.draw(batch);
+//            }
+//        }
+
+        for(int i=0; i<mlstPlayers.size(); i++) {
+            if (!mlstPlayers.get(i).isAlive()) {
+                mlstPlayers.remove(i);
             }
-            else {
-                player.draw(batch);
-            }
+            else
+                mlstPlayers.get(i).draw(batch);
         }
     }
 

@@ -144,16 +144,23 @@ public class Player extends Sprite {
             }
         }
 
-        // in order to remove safely, need to use iterator
-        Iterator<Bullet> ite = lstBullet.iterator();
-        while(ite.hasNext()) {
-            Bullet bullet = ite.next();
-            if (!bullet.isAlive()) {
-                ite.remove();
+//        // in order to remove safely, need to use iterator
+//        Iterator<Bullet> ite = lstBullet.iterator();
+//        while(ite.hasNext()) {
+//            Bullet bullet = ite.next();
+//            if (!bullet.isAlive()) {
+//                ite.remove();
+//            }
+//            else {
+//                bullet.draw(spritebatch);
+//            }
+//        }
+        for(int i=0; i<lstBullet.size(); i++) {
+            if (!lstBullet.get(i).isAlive()) {
+                lstBullet.remove(i);
             }
-            else {
-                bullet.draw(spritebatch);
-            }
+            else
+                lstBullet.get(i).draw(spritebatch);
         }
 
         hpBar.setPosition(getX()+15,getY()+115);
