@@ -41,7 +41,7 @@ public class Play {
         for(Zombie zombie: mlstZombie) {
             if (index == zombie.getMonsterIndex()) {
                 Gdx.app.log("ERROR", "Zombie killed: " + index);
-                mlstZombie.remove(zombie);
+                zombie.setDead();
                 break;
             }
         }
@@ -67,7 +67,7 @@ public class Play {
     public void removePlayers(String username) {
         for(Player player: mlstPlayers) {
             if (player.getUserName().equals(username)) {
-                mlstPlayers.remove(player);
+                player.setDead();
                 break;
             }
         }
@@ -75,6 +75,10 @@ public class Play {
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {
         for(Zombie zombie: mlstZombie) {
+            if (!zombie.isDead()) {
+                mlstZombie.remove(zombie);
+                continue;
+            }
             zombie.draw(batch);
         }
 
@@ -82,6 +86,10 @@ public class Play {
         //mCopyPlayer.draw(batch);
 
         for(Player player: mlstPlayers) {
+            if (!player.isDead()) {
+                mlstPlayers.remove(player);
+                continue;
+            }
             player.draw(batch);
         }
     }

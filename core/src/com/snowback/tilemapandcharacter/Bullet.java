@@ -10,8 +10,10 @@ public class Bullet {
     Rectangle hitBox;
     float a, time;
     int speed;
+    boolean mIsAlive;
 
     public Bullet(float x, float y, float angle) {
+        mIsAlive = true;
         a = angle;
         time = 2;
         speed = 300;
@@ -28,9 +30,12 @@ public class Bullet {
         time -= delta;
     }
 
+    public void setDead() {
+        mIsAlive = false;
+    }
+
     public boolean isDead() {
-        if (time < 0) return true;
-        return false;
+        return mIsAlive;
     }
 
     public void draw(SpriteBatch batch) {

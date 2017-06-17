@@ -47,6 +47,7 @@ public class Player extends Sprite {
     private Integer health;
     private Integer weaponPower;
     private MovingPosition posPrev = null;
+    private boolean isAlive = true;
 
     //Hp Bar
     private Texture hpBarTexture;
@@ -143,6 +144,10 @@ public class Player extends Sprite {
         }
 
         for(Bullet bullet: lstBullet) {
+            if (!bullet.isDead()) {
+                lstBullet.remove(bullet);
+                continue;
+            }
             bullet.draw(spritebatch);
         }
 
@@ -163,13 +168,12 @@ public class Player extends Sprite {
                 if(zombie.getHitBox().overlaps(bullet.getHitBox())) {
                     zombie.hit(weaponPower);
                     if (zombie.getHealth()<=0) {
-//                        lstZombie.remove(zombie);
-                        lstBullet.remove(bullet);
+                        bullet.setDead();
 
                         // send message to server, to kill zombies with index
                         return zombie.getMonsterIndex();
                     }
-                    lstBullet.remove(bullet);
+                    bullet.setDead();
                     return -1;
                 }
             }
@@ -177,11 +181,11 @@ public class Player extends Sprite {
             // check bounds and remove it in lstBullet
             float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) World.width*15, topRightY = (float) World.height*15;
             if (bullet.getHitBox().getX() <= bottomLeftX || bullet.getHitBox().getX() >= topRightX) {
-                lstBullet.remove(bullet);
+                bullet.setDead();
                 return -1;
             }
             else if (bullet.getHitBox().getY() <= bottomLeftY || bullet.getHitBox().getY() >= topRightY) {
-                lstBullet.remove(bullet);
+                bullet.setDead();
                 return -1;
             }
         }
@@ -238,4 +242,6 @@ public class Player extends Sprite {
     public void Hit(int i) {
         health-=i;
     }
+    public void setDead() { isAlive = false; }
+    public boolean isDead() { return isAlive; }
 }

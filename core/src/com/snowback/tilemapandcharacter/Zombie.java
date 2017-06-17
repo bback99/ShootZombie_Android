@@ -26,6 +26,7 @@ public class Zombie extends Sprite {
     private float timePassed = 0;
     private float faceRight = 1; //faceRight == 1; faceLeft == -1;
     private boolean canMove = true;
+    private boolean isAlive = true;
 
 
     //Enemy State;
@@ -166,5 +167,6 @@ public class Zombie extends Sprite {
         return hitBox;
     }
     public int getMonsterIndex() { return mIndex; }
-
+    public void setDead() { isAlive = false; }
+    public boolean isDead() { return isAlive; }
 }
