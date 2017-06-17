@@ -135,6 +135,9 @@ public class JoyStick {
                         Vector2 v = new Vector2(tpShooting.getKnobPercentX(), tpShooting.getKnobPercentY());
                         player.AddBullet(player.getX()+tpShooting.getKnobPercentX()+player.getTextureSize()/2, player.getY()+tpShooting.getKnobPercentY()+player.getTextureSize()/5, v.angle());
                         player.changeDirection(v.angle());
+
+                        // send to message
+                        mGameScreen.getMessageHandler().notifyPlayerShooting(player.getX()+tpShooting.getKnobPercentX()+player.getTextureSize()/2, player.getY()+tpShooting.getKnobPercentY()+player.getTextureSize()/5, v.angle());
                     }
                 }, 0.0f, 0.2f);
             }
@@ -200,7 +203,8 @@ public class JoyStick {
             }
         }
 
-        mGameScreen.getMessageHandler().notifyPlayerPosition(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY(), 0);
+        if (tpDirection.isTouched())
+            mGameScreen.getMessageHandler().notifyPlayerPosition(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY(), 0);
 
 //        // send player's position to server
 //        if (tpDirection.isTouched()) {

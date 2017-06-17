@@ -140,43 +140,6 @@ public class Player extends Sprite {
                 }
                 spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
             }
-//                mTimePassed += Gdx.graphics.getDeltaTime();
-//
-//                if (mlstMovingPosition.size() >= 1) {
-//                    posPrev = mlstMovingPosition.get(0);
-//                }
-//                else {
-//                    spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-//                    posPrev = null;
-//                }
-//
-//                if (posPrev != null) {
-//                    changeDirection(posPrev.fAngle);
-//
-//                    float dx = posPrev.fX - getX();
-//                    float dy = posPrev.fY - getY();
-//                    double length = Math.sqrt(dx * dx + dy * dy);
-//                    if (length <= 0.5) {
-//                        mlstMovingPosition.remove(0);
-//                    }
-//                    else {
-//                        //float delta = Gdx.graphics.getDeltaTime();
-//                        Vector2 normal = new Vector2(dx / (float) length, dy / (float) length);
-//                        float x = getX();
-//                        x += normal.x;
-//                        float y = getY();
-//                        y += normal.y;
-//
-//                        setX(x);
-//                        setY(y);
-//
-//                        spritebatch.draw((TextureRegion) mAnimation.getKeyFrame(mTimePassed, true), getX(), getY());
-//                        Gdx.app.log("Moving Position: ", "PrevPos X : " + posPrev.fX + ", Y: " + posPrev.fY + ", length: " + length);
-//                        Gdx.app.log("Moving Position: ", "CurrPos X : " + getX() + ", Y: " + getY() + ", Angle: " + posPrev.fAngle);
-//                        Gdx.app.log("Moving Position: ", "MovingTime : " + mMovingTime + ", TimePassed: " + mTimePassed);
-//                    }
-//                }
-//            }
         }
 
         for(Bullet bullet: lstBullet) {

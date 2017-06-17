@@ -199,7 +199,16 @@ public class Tilemapandcharacter extends Game {
                     return;
                 }
             }
-            if (type == "notify monsters") {
+            else if (type == "notify player shooing" ) {
+                JSONObject data = (JSONObject) args[0];
+                try {
+                    JSONObject body = data.getJSONObject("body");
+                    mPlay.addBullets(body.getString("user_name"), (float)body.getDouble("X"), (float)body.getDouble("Y"), (float)body.getDouble("angle"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+            else if (type == "notify monsters") {
                 JSONObject data = (JSONObject) args[0];
                 try {
                     JSONObject body = data.getJSONObject("body");

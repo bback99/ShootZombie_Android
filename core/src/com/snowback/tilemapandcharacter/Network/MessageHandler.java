@@ -27,6 +27,7 @@ public class MessageHandler extends SocketManager{
         onNotifyPlayerLocation();
         onUserLeaveFromRoom();
         onNotifyMonsters();
+        onNotifyPlayerShooting();
     }
 
     // receive messages from server
@@ -74,6 +75,16 @@ public class MessageHandler extends SocketManager{
         super.mMapListeners.put("onNotifyMonsters", lstListener);
     }
 
+    public void onNotifyPlayerShooting() {
+        List<DataListener> lstListener = new ArrayList<DataListener>();
+        lstListener.add(new DataListener() {
+            @Override
+            public void receiveData(DataEvent event) {
+                MessageHandler.super.mMain.socketHandler("notify player shooing", event.getMessage());
+            }
+        });
+        super.mMapListeners.put("onNotifyPlayerShooting", lstListener);
+    }
 
     // request messages to server
     public void requestAttempLogin(String userName, float X, float Y, DataCallback func) {
@@ -100,6 +111,18 @@ public class MessageHandler extends SocketManager{
             e.printStackTrace();
         }
         notifyMessage("room.roomHandler.notifyPlayerLocation", ntfUserPosition);
+    }
+
+    public void notifyPlayerShooting(float fX, float fY, float angle) {
+        JSONObject ntfPlayerShooting = new JSONObject();
+        try {
+            ntfPlayerShooting.put("X", fX);
+            ntfPlayerShooting.put("Y", fY);
+            ntfPlayerShooting.put("angle", angle);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        notifyMessage("room.roomHandler.notifyPlayerShooting", ntfPlayerShooting);
     }
 
     public void requestKilledMonster(int monsterIndex, DataCallback func) {

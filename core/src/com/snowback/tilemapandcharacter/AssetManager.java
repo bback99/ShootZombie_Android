@@ -142,9 +142,6 @@ public class AssetManager {
         frames.add(new TextureRegion(mZombieSheet,193,20,32,40));
         mZombieAttack = new Animation(0.3f,frames,Animation.PlayMode.NORMAL);
 
-
-
-
         //Make UI
         mHealthBar = mAssetManager.get(mHealthBarName,Texture.class);
         mHealthBarBorder = mAssetManager.get(mHealthBarBorderName,Texture.class);
