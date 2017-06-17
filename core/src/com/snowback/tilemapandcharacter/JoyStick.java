@@ -12,6 +12,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Touchpad;
 import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.utils.Timer;
 
+import java.util.ArrayList;
+
 /**
  * Created by bback99 on 2017-05-14.
  */
@@ -30,8 +32,9 @@ public class JoyStick {
     private Drawable touchShootingBackground;
     private Drawable touchShootingKnob;
 
-    private float blockSpeed;
+    public static float blockSpeed = 5.0f;
     private Player player;
+    private Player copyPlayer;
     private SpriteBatch spriteBatch;
     private OrthographicCamera camera; //2D camera
     InputMultiplexer multiplexer = new InputMultiplexer();
@@ -43,8 +46,9 @@ public class JoyStick {
     private boolean mIsToogle = false;
 
 
-   public JoyStick(Player heroSprite, OrthographicCamera camera, Tilemapandcharacter.GameScreen gameScreen) {
+   public JoyStick(Player heroSprite, Player copy, OrthographicCamera camera, Tilemapandcharacter.GameScreen gameScreen) {
        this.player = heroSprite;
+       this.copyPlayer = copy;
        create(camera);
        mGameScreen = gameScreen;
     }
@@ -101,8 +105,6 @@ public class JoyStick {
         player.setPosition((World.width*15-player.getWidth())/2.0f, (World.height*15-player.getHeight())/2.0f);
         this.camera = camera;
         camera.update();
-
-        blockSpeed = 5;
     }
 
     public void render (OrthographicCamera camera) {
@@ -115,10 +117,13 @@ public class JoyStick {
             if (!tpShooting.isTouched()) {
                 Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
                 player.changeDirection(v.angle());
+                copyPlayer.changeDirection(v.angle());
             }
         }
-        else
+        else {
             player.changeDirection(-1);     // means stop animation
+            copyPlayer.changeDirection(-1);     // means stop animation
+        }
 
         // for shooting
         if (tpShooting.isTouched()) {
@@ -158,6 +163,20 @@ public class JoyStick {
 
     public void checkBounds() {
 
+//        if (tpDirection.isTouched()) {
+//            copyPlayer.addMoving(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
+//            Gdx.app.log("List size: ", Integer.toString(copyPlayer.getList().size()));
+//        }
+//        else {
+//            ArrayList<Player.MovingPosition> lstTest = copyPlayer.getList();
+//            if (lstTest.size() > 0) {
+//                Player.MovingPosition data = lstTest.get(0);
+//                copyPlayer.setX(copyPlayer.getX() + data.fX*blockSpeed);
+//                copyPlayer.setY(copyPlayer.getY() + data.fY*blockSpeed);
+//                lstTest.remove(0);
+//            }
+//        }
+
         //float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) Gdx.graphics.getWidth()-player.getWidth(), topRightY = (float) Gdx.graphics.getHeight()-player.getHeight();
         float bottomLeftX = 0.0f, bottomLeftY = 0.0f, topRightX = (float) World.width*15-player.getWidth(), topRightY = (float) World.height*15-player.getHeight();
 
@@ -166,8 +185,9 @@ public class JoyStick {
         }
         else {
             float positionX = player.getX() + tpDirection.getKnobPercentX()*blockSpeed;
-            if (positionX >= 0 && positionX <= topRightX)
+            if (positionX >= 0 && positionX <= topRightX) {
                 player.setX(positionX);
+            }
         }
 
         if (player.getY() <= bottomLeftY || player.getY()+90 >= topRightY) {
@@ -175,27 +195,30 @@ public class JoyStick {
         }
         else {
             float positionY = player.getY() + tpDirection.getKnobPercentY()*blockSpeed;
-            if (positionY >= 0 && positionY +90 <= topRightY)
+            if (positionY >= 0 && positionY +90 <= topRightY) {
                 player.setY(positionY);
-        }
-
-        // send player's position to server
-        if (tpDirection.isTouched()) {
-            timeForPlayerLocation += Gdx.graphics.getDeltaTime();
-            mIsToogle = true;
-        }
-        else {
-            if (mIsToogle) {
-                Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
-                mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
-                mIsToogle = false;
             }
         }
 
-        if (timeForPlayerLocation >= 0.0001 && tpDirection.isTouched()) {
-            Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
-            mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
-            timeForPlayerLocation = 0;
-        }
+        mGameScreen.getMessageHandler().notifyPlayerPosition(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY(), 0);
+
+//        // send player's position to server
+//        if (tpDirection.isTouched()) {
+//            timeForPlayerLocation += Gdx.graphics.getDeltaTime();
+//            mIsToogle = true;
+//        }
+//        else {
+//            if (mIsToogle) {
+//                Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
+//                mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
+//                mIsToogle = false;
+//            }
+//        }
+//
+//        if (timeForPlayerLocation >= 0.0001 && tpDirection.isTouched()) {
+//            Vector2 v = new Vector2(tpDirection.getKnobPercentX(), tpDirection.getKnobPercentY());
+//            mGameScreen.getMessageHandler().notifyPlayerPosition(player.getX(), player.getY(), v.angle());
+//            timeForPlayerLocation = 0;
+//        }
     }
 }

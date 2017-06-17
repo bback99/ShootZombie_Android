@@ -69,7 +69,7 @@ public class Tilemapandcharacter extends Game {
             world = new World();
             mPlay = new Play(this);
             hud = new HUD(batch, this);
-            joyStick = new JoyStick(mPlay.getPlayer(), this.camera, this);
+            joyStick = new JoyStick(mPlay.getPlayer(), mPlay.getCopyPlayer(), this.camera, this);
 
             mMessageHandler = new com.snowback.tilemapandcharacter.Network.MessageHandler(this);
             if (mMessageHandler.connect(CHAT_SERVER_URL)) {

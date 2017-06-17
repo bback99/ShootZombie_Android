@@ -17,6 +17,7 @@ import java.util.Random;
 public class Play {
 
     private Player mPlayer;
+    private Player mCopyPlayer;
     private ArrayList<Player> mlstPlayers;       // for other players
     private ArrayList<Zombie> mlstZombie;
     private Random random;
@@ -25,6 +26,7 @@ public class Play {
     public Play(Tilemapandcharacter.GameScreen main) {
         mMain = main;
         mPlayer = new Player(true, main.UserName, 0, 0);       // for main player
+        mCopyPlayer = new Player(true, main.UserName, 300, 300);       // for main player
         mlstZombie = new ArrayList<Zombie>();
         mlstPlayers = new ArrayList<Player>();
         random = new Random();
@@ -67,6 +69,7 @@ public class Play {
         }
 
         mPlayer.draw(batch);
+        //mCopyPlayer.draw(batch);
 
         for(Player player: mlstPlayers) {
             player.draw(batch);
@@ -75,6 +78,10 @@ public class Play {
 
     public Player getPlayer() {
         return mPlayer;
+    }
+
+    public Player getCopyPlayer() {
+        return mCopyPlayer;
     }
 
     public void setPlayerPosition(String username, float X, float Y, float angle) {
