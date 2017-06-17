@@ -168,5 +168,5 @@ public class Zombie extends Sprite {
     }
     public int getMonsterIndex() { return mIndex; }
     public void setDead() { isAlive = false; }
-    public boolean isDead() { return isAlive; }
+    public boolean isAlive() { return isAlive; }
 }

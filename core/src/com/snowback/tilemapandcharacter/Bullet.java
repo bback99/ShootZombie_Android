@@ -34,7 +34,7 @@ public class Bullet {
         mIsAlive = false;
     }
 
-    public boolean isDead() {
+    public boolean isAlive() {
         return mIsAlive;
     }
 

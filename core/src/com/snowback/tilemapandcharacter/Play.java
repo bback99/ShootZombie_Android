@@ -9,6 +9,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 /**
@@ -74,23 +75,31 @@ public class Play {
     }
 
     public void render(OrthographicCamera camera, SpriteBatch batch) {
-        for(Zombie zombie: mlstZombie) {
-            if (!zombie.isDead()) {
-                mlstZombie.remove(zombie);
-                continue;
+        // in order to remove safely, need to use iterator
+        Iterator<Zombie> ite = mlstZombie.iterator();
+        while(ite.hasNext()) {
+            Zombie zombie = ite.next();
+            if (!zombie.isAlive()) {
+                ite.remove();
             }
-            zombie.draw(batch);
+            else {
+                zombie.draw(batch);
+            }
         }
 
         mPlayer.draw(batch);
         //mCopyPlayer.draw(batch);
 
-        for(Player player: mlstPlayers) {
-            if (!player.isDead()) {
-                mlstPlayers.remove(player);
-                continue;
+        // in order to remove safely, need to use iterator
+        Iterator<Player> ite2 = mlstPlayers.iterator();
+        while(ite2.hasNext()) {
+            Player player = ite2.next();
+            if (!player.isAlive()) {
+                ite2.remove();
             }
-            player.draw(batch);
+            else {
+                player.draw(batch);
+            }
         }
     }
 

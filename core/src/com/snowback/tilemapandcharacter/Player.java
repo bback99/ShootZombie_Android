@@ -12,6 +12,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.snowback.tilemapandcharacter.Network.MessageHandler;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Created by bback99 on 2017-05-14.
@@ -143,12 +144,16 @@ public class Player extends Sprite {
             }
         }
 
-        for(Bullet bullet: lstBullet) {
-            if (!bullet.isDead()) {
-                lstBullet.remove(bullet);
-                continue;
+        // in order to remove safely, need to use iterator
+        Iterator<Bullet> ite = lstBullet.iterator();
+        while(ite.hasNext()) {
+            Bullet bullet = ite.next();
+            if (!bullet.isAlive()) {
+                ite.remove();
             }
-            bullet.draw(spritebatch);
+            else {
+                bullet.draw(spritebatch);
+            }
         }
 
         hpBar.setPosition(getX()+15,getY()+115);
@@ -243,5 +248,5 @@ public class Player extends Sprite {
         health-=i;
     }
     public void setDead() { isAlive = false; }
-    public boolean isDead() { return isAlive; }
+    public boolean isAlive() { return isAlive; }
 }
