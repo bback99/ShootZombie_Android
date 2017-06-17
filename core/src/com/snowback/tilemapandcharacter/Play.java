@@ -143,6 +143,10 @@ public class Play {
                 }
             });
         }
+
+        for(Player player: mlstPlayers) {
+            player.updateBullets(mlstZombie);
+        }
     }
 
     public void updateEnemy(float dt) {
