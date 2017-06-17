@@ -163,7 +163,7 @@ public class Player extends Sprite {
                 if(zombie.getHitBox().overlaps(bullet.getHitBox())) {
                     zombie.hit(weaponPower);
                     if (zombie.getHealth()<=0) {
-                        lstZombie.remove(zombie);
+//                        lstZombie.remove(zombie);
                         lstBullet.remove(bullet);
 
                         // send message to server, to kill zombies with index

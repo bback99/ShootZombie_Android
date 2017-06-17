@@ -1,4 +1,5 @@
 package com.snowback.tilemapandcharacter;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.snowback.tilemapandcharacter.Network.DataCallback;
@@ -39,6 +40,7 @@ public class Play {
     public void removeMonster(int index) {
         for(Zombie zombie: mlstZombie) {
             if (index == zombie.getMonsterIndex()) {
+                Gdx.app.log("ERROR", "Zombie killed: " + index);
                 mlstZombie.remove(zombie);
                 break;
             }
@@ -137,6 +139,7 @@ public class Play {
     public void updateBullets() {
         int monsterIndex = mPlayer.updateBullets(mlstZombie);
         if (monsterIndex >= 0) {
+            removeMonster(monsterIndex);
             mMain.getMessageHandler().requestKilledMonster(monsterIndex, new DataCallback() {
                 @Override
                 public void responseData(JSONObject message) {
