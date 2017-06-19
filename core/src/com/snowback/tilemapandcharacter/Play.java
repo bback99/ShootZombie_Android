@@ -52,6 +52,15 @@ public class Play {
         mlstZombie.add(new Zombie(index, fX, fY, health));
     }
 
+    public void chasePlayer(int mobIndex, float fX, float fY) {
+        for(Zombie zombie: mlstZombie) {
+            if (zombie.getMonsterIndex() == mobIndex) {
+                zombie.setHitBox(fX, fY);
+                return;
+            }
+        }
+    }
+
     public void addBullets(String username, float x, float y, float angle) {
         for(Player player: mlstPlayers) {
             if (player.getUserName().equals(username)) {

@@ -28,6 +28,7 @@ public class MessageHandler extends SocketManager{
         onUserLeaveFromRoom();
         onNotifyMonsters();
         onNotifyPlayerShooting();
+        onChasePlayer();
     }
 
     // receive messages from server
@@ -84,6 +85,17 @@ public class MessageHandler extends SocketManager{
             }
         });
         super.mMapListeners.put("onNotifyPlayerShooting", lstListener);
+    }
+
+    public void onChasePlayer() {
+        List<DataListener> lstListener = new ArrayList<DataListener>();
+        lstListener.add(new DataListener() {
+            @Override
+            public void receiveData(DataEvent event) {
+                MessageHandler.super.mMain.socketHandler("notify chase player", event.getMessage());
+            }
+        });
+        super.mMapListeners.put("onChasePlayer", lstListener);
     }
 
     // request messages to server

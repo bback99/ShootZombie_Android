@@ -225,6 +225,15 @@ public class Tilemapandcharacter extends Game {
                     e.printStackTrace();
                 }
             }
+            else if (type == "notify chase player") {
+                JSONObject data = (JSONObject) args[0];
+                try {
+                    JSONObject body = data.getJSONObject("body");
+                    mPlay.chasePlayer(body.getInt("mobIndex"), (float)body.getDouble("posX"), (float)body.getDouble("posY"));
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
             else if (type == "notify login") {      // notify to add new_user
                 JSONObject data = (JSONObject) args[0];
                 try {

@@ -166,6 +166,7 @@ public class Zombie extends Sprite {
     public Rectangle getHitBox() {
         return hitBox;
     }
+    public void setHitBox(float x, float y) { hitBox.setX(x); hitBox.setY(y); }
     public int getMonsterIndex() { return mIndex; }
     public void setDead() { isAlive = false; }
     public boolean isAlive() { return isAlive; }
